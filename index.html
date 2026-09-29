@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deepanshu | Data Analyst & AI Automation Specialist</title>
+  <meta name="description" content="Digital CV & Portfolio of Deepanshu - Data Analyst, Python Web Scraping & AI Automation Specialist based in New Delhi, India. Expert in Google Apps Script, Advanced Excel & VBA." />
+  <meta name="author" content="Deepanshu" />
+  <meta name="keywords" content="Deepanshu, Data Analyst, Web Scraping, Python, Selenium, BeautifulSoup, Google Apps Script, Advanced Excel, VBA, MIS Reporting, Tender Analysis, AI Automation, New Delhi" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Deepanshu | Data Analyst & AI Automation Portfolio" />
+  <meta property="og:description" content="Turning manual reporting into automated, data-backed workflows. Python Web Scraping, Google Apps Script, Advanced Excel/VBA." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-theme="dark">
+  <!-- Glowing Background Orbs -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-bracket">&lt;</span>
+        <span class="brand-name">Deepanshu</span>
+        <span class="brand-tag">/Data&gt;</span>
+      </a>
+
+      <div class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Dark/Light Mode Toggle -->
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme" title="Toggle Dark/Light Mode">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+
+        <!-- Print ATS CV Button -->
+        <button id="cv-print-btn" class="btn btn-secondary btn-sm" title="Save as Print/ATS PDF Resume">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          <span>Print / ATS PDF</span>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm hire-btn">
+          <span>Hire Me</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="menu-toggle" class="icon-btn mobile-only" aria-label="Toggle Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section container">
+      <div class="hero-content">
+        <div class="status-badge">
+          <span class="pulsing-dot"></span>
+          <span>Available for Data Analyst & Automation Roles</span>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Deepanshu</span>
+          <br />
+          <span class="typing-text-wrapper">
+            <span id="typed-text" class="typed-text"></span><span class="cursor">&nbsp;</span>
+          </span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Data Analyst and MIS professional specializing in <strong>Python web scraping (Selenium, BeautifulSoup)</strong> and <strong>AI-driven workflow automation</strong>. Expert in Google Apps Script enterprise web apps and Advanced Excel & VBA, turning manual reporting into lightning-fast automated pipelines.
+        </p>
+
+        <!-- Quick Contacts Bar -->
+        <div class="quick-contact-pills">
+          <a href="mailto:deepanshu2661@gmail.com" class="contact-pill">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>deepanshu2661@gmail.com</span>
+          </a>
+          <a href="tel:+919310033561" class="contact-pill">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>+91 9310033561</span>
+          </a>
+          <span class="contact-pill">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>New Delhi, India</span>
+          </span>
+        </div>
+
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary btn-lg">
+            <span>Explore Projects</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          </a>
+          <button id="hero-download-cv" class="btn btn-secondary btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span>Download CV (PDF)</span>
+          </button>
+          <a href="https://wa.me/919310033561" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg whatsapp-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.073.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.072.043.419-.101.824z"/></svg>
+            <span>WhatsApp Me</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Visual Card -->
+      <div class="hero-visual">
+        <div class="portrait-container">
+          <div class="portrait-glow-ring"></div>
+          
+          <!-- Modern Tech Avatar Card -->
+          <div class="avatar-tech-card">
+            <div class="avatar-icon-ring">
+              <span class="avatar-monogram">D</span>
+            </div>
+            <div class="avatar-details">
+              <h3 class="avatar-name">Deepanshu</h3>
+              <p class="avatar-title">Data Analyst & Web Scraping</p>
+              <span class="avatar-pill">Crystal Works • Sr. MIS</span>
+            </div>
+          </div>
+
+          <!-- Orbiting Badge 1 -->
+          <div class="floating-badge badge-top-left glass-card">
+            <span class="badge-icon">⚡</span>
+            <div class="badge-text">
+              <strong>Python Scraping</strong>
+              <small>Selenium / BeautifulSoup</small>
+            </div>
+          </div>
+
+          <!-- Orbiting Badge 2 -->
+          <div class="floating-badge badge-bottom-right glass-card">
+            <span class="badge-icon">📊</span>
+            <div class="badge-text">
+              <strong>Apps Script & Excel</strong>
+              <small>Web Apps & VBA Expert</small>
+            </div>
+          </div>
+
+          <!-- Orbiting Badge 3 -->
+          <div class="floating-badge badge-bottom-left glass-card">
+            <span class="badge-icon">🎯</span>
+            <div class="badge-text">
+              <strong>Tender Intelligence</strong>
+              <small>Pricing & Bid Strategy</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEY IMPACT METRICS BAR -->
+    <section class="metrics-bar container">
+      <div class="metric-item glass-card">
+        <span class="metric-number" data-target="90">0</span><span class="metric-suffix">%+</span>
+        <span class="metric-label">Manual Time Saved via Automation</span>
+      </div>
+      <div class="metric-item glass-card">
+        <span class="metric-number" data-target="100">0</span><span class="metric-suffix">s+</span>
+        <span class="metric-label">Government Portals & Tenders Scraped</span>
+      </div>
+      <div class="metric-item glass-card">
+        <span class="metric-number" data-target="100">0</span><span class="metric-suffix">%</span>
+        <span class="metric-label">Automated MIS Data Syncing</span>
+      </div>
+      <div class="metric-item glass-card">
+        <span class="metric-number" data-target="4">0</span><span class="metric-suffix">+</span>
+        <span class="metric-label">Years Cross-Functional Business Lens</span>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE "ASK DEEPANSHU'S AI RESUME" RECRUITER ASSISTANT -->
+    <section class="ai-assistant-section container">
+      <div class="ai-assistant-wrapper glass-card">
+        <div class="assistant-header">
+          <div class="assistant-title-group">
+            <span class="ai-sparkle">🤖</span>
+            <div>
+              <h3>Ask Deepanshu's AI CV</h3>
+              <p>Instant answers for HR & hiring managers based on Deepanshu's real resume</p>
+            </div>
+          </div>
+          <span class="model-badge">Interactive ResumeBot</span>
+        </div>
+
+        <div class="assistant-chips">
+          <button class="chip-btn" data-query="What is your Python web scraping experience?">What is your Python web scraping experience?</button>
+          <button class="chip-btn" data-query="How do you build web apps in Google Apps Script?">How do you build web apps in Google Apps Script?</button>
+          <button class="chip-btn" data-query="Tell me about your tender analysis & pricing strategy">Tell me about your tender analysis & pricing strategy</button>
+          <button class="chip-btn" data-query="What are your Advanced Excel & VBA skills?">What are your Advanced Excel & VBA skills?</button>
+          <button class="chip-btn" data-query="Are you open to immediate opportunities?">Are you open to immediate opportunities?</button>
+        </div>
+
+        <div class="assistant-chat-box" id="assistant-chat-box">
+          <div class="chat-message bot">
+            <div class="message-avatar">🤖</div>
+            <div class="message-body">
+              <p>Hello! I am Deepanshu's AI portfolio agent. Ask me anything about his Python scraping pipelines (Selenium/BeautifulSoup), Google Apps Script web apps, tender pricing analysis, or Advanced Excel/VBA reporting!</p>
+            </div>
+          </div>
+        </div>
+
+        <form id="assistant-form" class="assistant-input-bar">
+          <input type="text" id="assistant-input" placeholder="Ask about web scraping, Apps Script, Crystal Works, Excel VBA..." autocomplete="off" />
+          <button type="submit" class="btn btn-primary btn-sm">
+            <span>Ask</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section container">
+      <div class="section-header">
+        <span class="section-tag">// 01. PROFILE</span>
+        <h2 class="section-title">Practical, Business-First Data & Automation</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card glass-card">
+          <h3>Professional Summary</h3>
+          <p>
+            I am a <strong>Data Analyst and MIS professional</strong> specializing in web scraping and AI-driven automation, with a proven track record of turning manual reporting into automated, data-backed workflows.
+          </p>
+          <p>
+            Expert in <strong>Advanced Google Sheets & Apps Script</strong> and <strong>Advanced Excel & VBA</strong>, and skilled in <strong>Python (Selenium, BeautifulSoup)</strong> for large-scale data extraction and tender/pricing analysis.
+          </p>
+          <p>
+            With <strong>four years of prior hospitality and sales experience</strong>, I bring a rare, practical business lens to data: I don't just extract rows and columns—I design intuitive UI/UX dashboards, automate repetitive team operations, and directly inform executive bid pricing decisions.
+          </p>
+
+          <div class="about-highlights-list">
+            <div class="highlight-item">
+              <span class="icon-check">✓</span>
+              <div>
+                <strong>End-to-End Web Scraping:</strong> Scaled Python pipelines harvesting complex government & commercial tender portals.
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="icon-check">✓</span>
+              <div>
+                <strong>Full-Stack Apps Script Delivery:</strong> Replaced bloated manual spreadsheets with dedicated internal web apps.
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="icon-check">✓</span>
+              <div>
+                <strong>Tender & Pricing Intelligence:</strong> Benchmarked historical winner bids and competitor prices to drive bidding win rates.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-stats-card glass-card">
+          <h3>Core Competencies & Soft Skills</h3>
+          <div class="philosophy-item">
+            <span class="philo-num">01</span>
+            <div>
+              <h4>Strong Analytical & Problem-Solving</h4>
+              <p>Deconstructing complex multi-stage workflows into automated scripts, eliminating human error in recurring MIS reports.</p>
+            </div>
+          </div>
+          <div class="philosophy-item">
+            <span class="philo-num">02</span>
+            <div>
+              <h4>Leadership & Stakeholder Communication</h4>
+              <p>Translating executive management requirements into crisp, interactive UI/UX dashboards and automated email triggers.</p>
+            </div>
+          </div>
+          <div class="philosophy-item">
+            <span class="philo-num">03</span>
+            <div>
+              <h4>Adaptability & Business Acumen</h4>
+              <p>Deep commercial understanding developed through 4 years of client-facing account management and operations leadership.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section container">
+      <div class="section-header">
+        <span class="section-tag">// 02. TECHNICAL ARSENAL</span>
+        <h2 class="section-title">Languages, Tools & Concepts</h2>
+      </div>
+
+      <!-- Skill Category Filters -->
+      <div class="filter-tabs" id="skill-filter-tabs">
+        <button class="filter-tab active" data-category="all">All Skills</button>
+        <button class="filter-tab" data-category="scraping">Web Scraping & Python</button>
+        <button class="filter-tab" data-category="appsscript">Google Apps Script & Web Apps</button>
+        <button class="filter-tab" data-category="excel">Excel & VBA (Expert)</button>
+        <button class="filter-tab" data-category="analytics">Analytics & BI</button>
+      </div>
+
+      <div class="skills-grid" id="skills-grid">
+        <!-- Python Web Scraping -->
+        <div class="skill-card glass-card" data-category="scraping">
+          <div class="skill-header">
+            <span class="skill-icon">🐍</span>
+            <h4>Python (Selenium & BeautifulSoup)</h4>
+            <span class="skill-level">Expert</span>
+          </div>
+          <p>Large-scale dynamic crawling, CAPTCHA handling, pagination loops, DOM parsing, tender portals, Pandas transformation.</p>
+          <div class="progress-bar-bg"><div class="progress-fill" style="width: 95%;"></div></div>
+        </div>
+
+        <!-- Google Apps Script -->
+        <div class="skill-card glass-card" data-category="appsscript">
+          <div class="skill-header">
+            <span class="skill-icon">⚡</span>
+            <h4>Advanced Google Sheets & Apps Script</h4>
+            <span class="skill-level">Expert</span>
+          </div>
+          <p>End-to-end internal web apps, REST APIs, automated data syncing across workbooks, scheduled cron triggers, automated email dispatch.</p>
+          <div class="progress-bar-bg"><div class="progress-fill" style="width: 98%;"></div></div>
+        </div>
+
+        <!-- Advanced Excel & VBA -->
+        <div class="skill-card glass-card" data-category="excel">
+          <div class="skill-header">
+            <span class="skill-icon">📗</span>
+            <h4>Advanced Excel & VBA Macros</h4>
+            <span class="skill-level">Expert</span>
+          </div>
+          <p>VLOOKUP, INDEX-MATCH, SUMIFS, COUNTIFS, Pivot Tables, Power Query, complex VBA automation routines for daily MIS reports.</p>
+          <div class="progress-bar-bg"><div class="progress-fill" style="width: 98%;"></div></div>
+        </div>
+
+        <!-- Business Intelligence -->
+        <div class="skill-card glass-card" data-category="analytics">
+          <div class="skill-header">
+            <span class="skill-icon">📈</span>
+            <h4>Power BI & Dashboard UI/UX</h4>
+            <span class="skill-level">Advanced</span>
+          </div>
+          <p>Interactive executive leadership dashboards, KPI tracking, DAX calculations, visual hierarchy, business metric storytelling.</p>
+          <div class="progress-bar-bg"><div class="progress-fill" style="width: 88%;"></div></div>
+        </div>
+
+        <!-- SQL & Databases -->
+        <div class="skill-card glass-card" data-category="analytics">
+          <div class="skill-header">
+            <span class="skill-icon">🗄️</span>
+            <h4>SQL & Data Cleaning</h4>
+            <span class="skill-level">Advanced</span>
+          </div>
+          <p>Relational queries, aggregations, joins, data normalization, deduplication, exploratory data analysis (EDA), data validation.</p>
+          <div class="progress-bar-bg"><div class="progress-fill" style="width: 86%;"></div></div>
+        </div>
+
+        <!-- AI Automation Tools -->
+        <div class="skill-card glass-card" data-category="appsscript">
+          <div class="skill-header">
+            <span class="skill-icon">🧠</span>
+            <h4>No-Code & AI Automation Tools</h4>
+            <span class="skill-level">Advanced</span>
+          </div>
+          <p>AI web app builders, prompt engineering for automated cleaning, workflow orchestration, AI-assisted visualization.</p>
+          <div class="progress-bar-bg"><div class="progress-fill" style="width: 90%;"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section id="projects" class="section container">
+      <div class="section-header">
+        <span class="section-tag">// 03. KEY ACCOMPLISHMENTS</span>
+        <h2 class="section-title">Production Automation & Scraping Systems</h2>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: Tender Scraping Pipeline -->
+        <article class="project-card glass-card">
+          <div class="project-media">
+            <img src="assets/rag-system.jpg" alt="Government Tender Scraping Pipeline" class="project-img" />
+            <div class="project-badge">Web Scraping / Python</div>
+          </div>
+          <div class="project-body">
+            <h3>Government & Portal Tender Scraping Pipeline</h3>
+            <p>
+              Built end-to-end Python pipelines using Selenium and BeautifulSoup to harvest tender announcements, RFPs, and competitor bidding records across government portals, slashing manual data collection time by over 90%.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Selenium</span>
+              <span class="tech-tag">BeautifulSoup</span>
+              <span class="tech-tag">Pandas</span>
+              <span class="tech-tag">Automated ETL</span>
+            </div>
+            <div class="project-metrics-row">
+              <div class="p-stat"><strong>-90%</strong><span>Collection Time</span></div>
+              <div class="p-stat"><strong>100%</strong><span>Accuracy</span></div>
+              <div class="p-stat"><strong>Daily</strong><span>Auto-Extraction</span></div>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-secondary btn-sm open-modal-btn" data-project="tender">
+                <span>View Architecture</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Google Apps Script Web App Suite -->
+        <article class="project-card glass-card">
+          <div class="project-media">
+            <img src="assets/cv-vision.jpg" alt="Google Apps Script Enterprise Web Apps" class="project-img" />
+            <div class="project-badge">Google Apps Script / Web Apps</div>
+          </div>
+          <div class="project-body">
+            <h3>Enterprise Internal Web App & Workflow Automation</h3>
+            <p>
+              Architected and delivered internal web applications in Google Apps Script, replacing slow, error-prone manual spreadsheets across cross-functional teams with centralized UI, instant data syncing, and automated email triggers.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Google Apps Script</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Google Sheets API</span>
+              <span class="tech-tag">HTML5/CSS</span>
+              <span class="tech-tag">Email Triggers</span>
+            </div>
+            <div class="project-metrics-row">
+              <div class="p-stat"><strong>Zero</strong><span>Manual Entry</span></div>
+              <div class="p-stat"><strong>Real-Time</strong><span>Syncing</span></div>
+              <div class="p-stat"><strong>Multi-Team</strong><span>Adoption</span></div>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-secondary btn-sm open-modal-btn" data-project="appsscript">
+                <span>View Architecture</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Tender Pricing & Bid Intelligence Engine -->
+        <article class="project-card glass-card">
+          <div class="project-media default-gradient-bg">
+            <div class="code-preview-banner">
+              <span class="code-dot red"></span><span class="code-dot yellow"></span><span class="code-dot green"></span>
+              <code>tender_pricing_intelligence.py</code>
+            </div>
+            <div class="project-badge">Pricing Strategy & Analytics</div>
+          </div>
+          <div class="project-body">
+            <h3>Competitor Bidding & Tender Pricing Intelligence</h3>
+            <p>
+              Analyzed multi-year historical tender outcomes to determine winning vendor margins, bid spread distributions, and quotation ranges, directly empowering leadership with data-backed bid pricing strategies.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Advanced Excel</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Power BI</span>
+              <span class="tech-tag">Statistical Analysis</span>
+              <span class="tech-tag">Pricing Optimization</span>
+            </div>
+            <div class="project-metrics-row">
+              <div class="p-stat"><strong>Higher</strong><span>Bid Win Rate</span></div>
+              <div class="p-stat"><strong>Multi-Vendor</strong><span>Tracking</span></div>
+              <div class="p-stat"><strong>Executive</strong><span>Insights</span></div>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-secondary btn-sm open-modal-btn" data-project="pricing">
+                <span>View Architecture</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- EMPLOYMENT HISTORY / CAREER TIMELINE -->
+    <section id="experience" class="section container">
+      <div class="section-header">
+        <span class="section-tag">// 04. CAREER PATH</span>
+        <h2 class="section-title">Employment History</h2>
+      </div>
+
+      <div class="timeline">
+        <!-- Experience 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Sr. MIS & Data Analyst (Web Scraping & AI Automation)</h3>
+                <span class="company-name">Crystal Works • New Delhi</span>
+              </div>
+              <span class="timeline-period">08/2026 — Present</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Built end-to-end web scraping pipelines in Python (Selenium, BeautifulSoup) to extract tender data from government and external portals, significantly reducing manual data collection time.</li>
+              <li>Analyze historical tender data to identify which vendors previously won similar tenders and at what prices, directly informing bid pricing strategy.</li>
+              <li>Own end-to-end delivery of internal web apps built in Google Apps Script, replacing manual spreadsheet processes across teams and workflows.</li>
+              <li>Design advanced, interactive UI/UX dashboards for leadership reporting, reducing the time spent compiling management reports.</li>
+              <li>Prepare daily, weekly, and monthly MIS reports using Advanced Excel (VLOOKUP, INDEX-MATCH, SUMIFS, COUNTIFS, Pivot Tables), improving reporting turnaround.</li>
+              <li>Apply AI automation tools to accelerate data cleaning and analysis, reducing manual processing time on recurring reports.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Selenium</span>
+              <span class="tech-tag">BeautifulSoup</span>
+              <span class="tech-tag">Google Apps Script</span>
+              <span class="tech-tag">Advanced Excel</span>
+              <span class="tech-tag">AI Automation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3>MIS Executive & Jr. Data Analyst (Web Scraping)</h3>
+                <span class="company-name">Sam International • Karol Bagh, New Delhi</span>
+              </div>
+              <span class="timeline-period">01/2026 — 08/2026</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Learned and applied web scraping fundamentals to collect and structure external data for business reporting and recurring reports.</li>
+              <li>Built first internal web apps and automation scripts in Google Apps Script under senior guidance, automating previously manual tasks.</li>
+              <li>Assisted in designing dashboards for management reporting using Excel, Google Sheets, and AI-assisted visualization tools.</li>
+              <li>Prepared daily, weekly, and monthly MIS reports using Advanced Excel functions including VLOOKUP, INDEX-MATCH, SUMIFS, COUNTIFS, and Pivot Tables.</li>
+              <li>Wrote Excel VBA scripts to automate recurring data extraction and formatting tasks, saving significant manual effort each week.</li>
+              <li>Developed Google Apps Script solutions for automated data syncing, email triggers, and scheduled reporting.</li>
+              <li>Planned and managed social media marketing activities, including content scheduling and performance tracking.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tech-tag">Web Scraping</span>
+              <span class="tech-tag">Google Apps Script</span>
+              <span class="tech-tag">Excel VBA</span>
+              <span class="tech-tag">MIS Reporting</span>
+              <span class="tech-tag">Digital Marketing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Data Analytics Intern</h3>
+                <span class="company-name">Orangus Infotech Pvt. Ltd. • New Delhi</span>
+              </div>
+              <span class="timeline-period">04/2025 — 09/2025</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Actively involved in data collection, data cleaning, statistical analysis, and data visualization.</li>
+              <li>Generated analytical reports and mastered advanced data analytics strategies to provide actionable business insights.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tech-tag">Data Collection</span>
+              <span class="tech-tag">Data Cleaning</span>
+              <span class="tech-tag">Statistical Analysis</span>
+              <span class="tech-tag">Data Visualization</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 4 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Night Manager</h3>
+                <span class="company-name">Hotel Palm Greens • New Delhi</span>
+              </div>
+              <span class="timeline-period">10/2022 — 10/2025</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Oversaw nightly hotel operations, ensuring exceptional guest experiences and adherence to service standards.</li>
+              <li>Managed front desk staff, facilitating training and performance evaluations to enhance team effectiveness.</li>
+              <li>Coordinated with security and maintenance teams to address guest concerns promptly and maintain a safe environment.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tech-tag">Operations Management</span>
+              <span class="tech-tag">Team Leadership</span>
+              <span class="tech-tag">Crisis Resolution</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 5 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Account Executive</h3>
+                <span class="company-name">Rhombus Enterprises • Gurgaon</span>
+              </div>
+              <span class="timeline-period">08/2020 — 08/2021</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Cultivated strong client relationships, enhancing customer satisfaction and retention.</li>
+              <li>Conducted market research to identify new business opportunities and inform sales strategies.</li>
+              <li>Collaborated with cross-functional teams to streamline the sales process and improve operational efficiency.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tech-tag">Client Relationships</span>
+              <span class="tech-tag">Market Research</span>
+              <span class="tech-tag">Sales Operations</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS -->
+    <section id="education" class="section container">
+      <div class="section-header">
+        <span class="section-tag">// 05. ACADEMICS & CREDENTIALS</span>
+        <h2 class="section-title">Education & Certifications</h2>
+      </div>
+
+      <div class="edu-cert-grid">
+        <!-- Education -->
+        <div class="edu-column glass-card">
+          <h3 class="col-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            <span>Formal Education</span>
+          </h3>
+
+          <div class="edu-item">
+            <div class="edu-header">
+              <h4>MBA (Banking and Finance)</h4>
+              <span class="edu-year">07/2023 — Present</span>
+            </div>
+            <p class="edu-institution">IGNOU • New Delhi</p>
+            <p class="edu-details">Master of Business Administration with focus on Financial Analysis, Corporate Banking, and Strategic Management.</p>
+          </div>
+
+          <div class="edu-item">
+            <div class="edu-header">
+              <h4>Bachelor of Commerce (B.Com) - Programme</h4>
+              <span class="edu-year">07/2019 — 06/2022</span>
+            </div>
+            <p class="edu-institution">Delhi University • New Delhi</p>
+            <p class="edu-details">Graduated with a strong foundation in Business Mathematics, Statistics, Commercial Accounting, and Economics.</p>
+          </div>
+
+          <div class="edu-item">
+            <div class="edu-header">
+              <h4>Intermediate (12th Grade)</h4>
+              <span class="edu-year">05/2019</span>
+            </div>
+            <p class="edu-institution">Kendriya Vidyalaya Pushp Vihar • New Delhi</p>
+          </div>
+
+          <div class="edu-item">
+            <div class="edu-header">
+              <h4>High School (10th Grade)</h4>
+              <span class="edu-year">03/2017</span>
+            </div>
+            <p class="edu-institution">Kendriya Vidyalaya Pushp Vihar • New Delhi</p>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="cert-column glass-card">
+          <h3 class="col-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            <span>Certified Courses</span>
+          </h3>
+
+          <div class="cert-card">
+            <div class="cert-icon-box">🐍</div>
+            <div class="cert-info">
+              <h4>Data Analyst with Python</h4>
+              <span class="cert-meta">Teckstack Institute • 03/2025</span>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon-box">🌐</div>
+            <div class="cert-info">
+              <h4>The Fundamentals of Digital Marketing</h4>
+              <span class="cert-meta">Google Digital • 07/2023</span>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon-box">📗</div>
+            <div class="cert-info">
+              <h4>Microsoft Advanced Excel 2016</h4>
+              <span class="cert-meta">Microsoft Office Specialist • 05/2022</span>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon-box">⚡</div>
+            <div class="cert-info">
+              <h4>Google Apps Script & Automation Specialist</h4>
+              <span class="cert-meta">Self-Taught & Enterprise Proven at Crystal Works</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section container">
+      <div class="section-header">
+        <span class="section-tag">// 06. CONNECT</span>
+        <h2 class="section-title">Get in Touch with Deepanshu</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-card glass-card">
+          <h3>Let's Discuss Opportunities</h3>
+          <p>
+            I am actively looking for high-impact roles as a <strong>Data Analyst, Web Scraping Specialist, or Automation Engineer</strong>. Whether you need automated data scraping pipelines, enterprise Apps Script web apps, or advanced MIS dashboards, let's connect!
+          </p>
+
+          <div class="contact-direct-list">
+            <a href="mailto:deepanshu2661@gmail.com" class="direct-item">
+              <div class="icon-circle">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <small>Email Address</small>
+                <strong>deepanshu2661@gmail.com</strong>
+              </div>
+            </a>
+
+            <a href="tel:+919310033561" class="direct-item">
+              <div class="icon-circle">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div>
+                <small>Phone / Mobile</small>
+                <strong>+91 9310033561</strong>
+              </div>
+            </a>
+
+            <a href="https://wa.me/919310033561" target="_blank" rel="noopener noreferrer" class="direct-item">
+              <div class="icon-circle whatsapp-icon-bg">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.275.073.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.072.043.419-.101.824z"/></svg>
+              </div>
+              <div>
+                <small>WhatsApp Direct</small>
+                <strong>Chat on WhatsApp (+91 9310033561)</strong>
+              </div>
+            </a>
+
+            <div class="direct-item">
+              <div class="icon-circle">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <small>Location</small>
+                <strong>New Delhi, India</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card glass-card">
+          <h3>Send Deepanshu a Message</h3>
+          <form id="portfolio-contact-form">
+            <div class="form-group">
+              <label for="contact-name">Your Name</label>
+              <input type="text" id="contact-name" placeholder="e.g. Hiring Manager / Recruiter" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Your Work Email</label>
+              <input type="email" id="contact-email" placeholder="manager@company.com" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" placeholder="Data Analyst / Web Scraping Opportunity" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" rows="4" placeholder="Hi Deepanshu, we are impressed by your web scraping and Apps Script work at Crystal Works and would like to discuss..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <span>Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+          </form>
+          <div id="form-feedback" class="form-feedback hidden"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <a href="#hero" class="footer-brand">&lt;Deepanshu/Data&gt;</a>
+        <p>Data Analyst | Web Scraping & AI Automation Specialist • New Delhi, India</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-right">
+        <p>© 2026 Deepanshu. Hosted live on GitHub Pages.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PROJECT ARCHITECTURE MODAL -->
+  <div id="project-modal" class="modal-backdrop">
+    <div class="modal-dialog glass-card">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close Modal">&times;</button>
+      <div id="modal-content-target">
+        <!-- Dynamically populated -->
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" class="toast"></div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
