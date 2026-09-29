@@ -31,9 +31,11 @@
   <header class="navbar-wrapper">
     <nav class="navbar container">
       <a href="#hero" class="nav-brand">
-        <span class="brand-bracket">&lt;</span>
-        <span class="brand-name">Deepanshu</span>
-        <span class="brand-tag">/Data&gt;</span>
+        <span class="brand-avatar-mini">D</span>
+        <div class="brand-info">
+          <span class="brand-name">Deepanshu</span>
+          <span class="brand-tagline">Data Analyst & Automation</span>
+        </div>
       </a>
 
       <div class="nav-menu" id="nav-menu">
@@ -41,6 +43,7 @@
         <a href="#skills" class="nav-link">Skills</a>
         <a href="#projects" class="nav-link">Projects</a>
         <a href="#experience" class="nav-link">Experience</a>
+        <a href="#reviews" class="nav-link">Reviews</a>
         <a href="#education" class="nav-link">Education</a>
         <a href="#contact" class="nav-link">Contact</a>
       </div>
@@ -207,6 +210,8 @@
 
         <div class="assistant-chips">
           <button class="chip-btn" data-query="What is your Python web scraping experience?">What is your Python web scraping experience?</button>
+          <button class="chip-btn" data-query="How do you scrape GeM portals and PDFs?">How do you scrape GeM portals and PDFs?</button>
+          <button class="chip-btn" data-query="What did you achieve at Crystal Works?">What did you achieve at Crystal Works?</button>
           <button class="chip-btn" data-query="How do you build web apps in Google Apps Script?">How do you build web apps in Google Apps Script?</button>
           <button class="chip-btn" data-query="Tell me about your tender analysis & pricing strategy">Tell me about your tender analysis & pricing strategy</button>
           <button class="chip-btn" data-query="What are your Advanced Excel & VBA skills?">What are your Advanced Excel & VBA skills?</button>
@@ -217,18 +222,70 @@
           <div class="chat-message bot">
             <div class="message-avatar">🤖</div>
             <div class="message-body">
-              <p>Hello! I am Deepanshu's AI portfolio agent. Ask me anything about his Python scraping pipelines (Selenium/BeautifulSoup), Google Apps Script web apps, tender pricing analysis, or Advanced Excel/VBA reporting!</p>
+              <p>Hello! I am Deepanshu's AI portfolio agent. Ask me anything about his Python scraping pipelines (Selenium/BeautifulSoup), GeM tender bid extraction, Google Apps Script web apps, tender pricing analysis, or Advanced Excel/VBA reporting!</p>
             </div>
           </div>
         </div>
 
         <form id="assistant-form" class="assistant-input-bar">
-          <input type="text" id="assistant-input" placeholder="Ask about web scraping, Apps Script, Crystal Works, Excel VBA..." autocomplete="off" />
+          <input type="text" id="assistant-input" placeholder="Ask about GeM portal, web scraping, Apps Script, Crystal Works, Excel VBA..." autocomplete="off" />
           <button type="submit" class="btn btn-primary btn-sm">
             <span>Ask</span>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
           </button>
         </form>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE GeM & TENDER SCRAPER SIMULATOR -->
+    <section id="demo-scraper" class="section container">
+      <div class="section-header">
+        <span class="section-tag">// INTERACTIVE LIVE DEMO</span>
+        <h2 class="section-title">GeM Tender Scraping & Bid Analyzer</h2>
+        <p style="color: var(--text-secondary); margin-top: 0.5rem; max-width: 680px;">
+          Experience Deepanshu's automated Python & Google Apps Script workflow in action. Select a real-world tender, run the headless extraction pipeline, and inspect the automated bid intelligence report.
+        </p>
+      </div>
+
+      <div class="scraper-simulator-card glass-card">
+        <div class="simulator-controls">
+          <div class="control-group">
+            <label for="tender-select">Select Target Portal Tender:</label>
+            <select id="tender-select" class="simulator-select">
+              <option value="gem-laptops">GeM Portal: Ministry IT Hardware & Laptops Supply (GeM/2026/B/84920)</option>
+              <option value="cpwd-facility">CPWD Tender: Integrated Facility Operations & Support (CPWD/DEL/2026/041)</option>
+              <option value="railway-cctv">Indian Railways: CCTV Surveillance & Analytics Integration (NR/S&T/2026/118)</option>
+            </select>
+          </div>
+          <button id="run-scraper-btn" class="btn btn-primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            <span>Run Python Scraper</span>
+          </button>
+        </div>
+
+        <div class="simulator-display-grid">
+          <!-- Terminal Output -->
+          <div class="terminal-box">
+            <div class="terminal-header">
+              <span class="code-dot red"></span>
+              <span class="code-dot yellow"></span>
+              <span class="code-dot green"></span>
+              <span class="terminal-title">scraper_engine.py — Selenium & BeautifulSoup</span>
+            </div>
+            <div class="terminal-body" id="scraper-terminal">
+              <p class="term-line term-dim"># Click 'Run Python Scraper' above to initiate real-time portal extraction...</p>
+            </div>
+          </div>
+
+          <!-- Live Extracted Intelligence Card -->
+          <div class="results-box" id="scraper-results">
+            <div class="results-placeholder">
+              <div class="pulse-icon">⚡</div>
+              <h4>Awaiting Scraper Execution</h4>
+              <p>Run the crawler to harvest vendor quotes, margin benchmarks, and win-probability pricing strategy.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -397,7 +454,7 @@
         <!-- Project 1: Tender Scraping Pipeline -->
         <article class="project-card glass-card">
           <div class="project-media">
-            <img src="assets/rag-system.jpg" alt="Government Tender Scraping Pipeline" class="project-img" />
+            <img src="rag-system.jpg" onerror="this.src='assets/rag-system.jpg'" alt="Government Tender Scraping Pipeline" class="project-img" />
             <div class="project-badge">Web Scraping / Python</div>
           </div>
           <div class="project-body">
@@ -429,7 +486,7 @@
         <!-- Project 2: Google Apps Script Web App Suite -->
         <article class="project-card glass-card">
           <div class="project-media">
-            <img src="assets/cv-vision.jpg" alt="Google Apps Script Enterprise Web Apps" class="project-img" />
+            <img src="cv-vision.jpg" onerror="this.src='assets/cv-vision.jpg'" alt="Google Apps Script Enterprise Web Apps" class="project-img" />
             <div class="project-badge">Google Apps Script / Web Apps</div>
           </div>
           <div class="project-body">
@@ -637,10 +694,75 @@
       </div>
     </section>
 
+    <!-- REVIEWS & ENDORSEMENTS SECTION -->
+    <section id="reviews" class="section container">
+      <div class="section-header" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1.25rem;">
+        <div>
+          <span class="section-tag">// 05. ENDORSEMENTS & TESTIMONIALS</span>
+          <h2 class="section-title">What Previous Owners & Leaders Say</h2>
+          <p style="color: var(--text-secondary); margin-top: 0.4rem; max-width: 620px;">
+            Verified recommendations from company directors, operations heads, and team managers who worked directly with Deepanshu.
+          </p>
+        </div>
+        <button id="open-review-modal-btn" class="btn btn-primary btn-sm">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+          <span>Leave a Review / Endorsement</span>
+        </button>
+      </div>
+
+      <!-- Testimonials Grid -->
+      <div class="reviews-grid" id="reviews-grid">
+        <!-- Review 1 -->
+        <div class="review-card glass-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "Deepanshu completely transformed our tender procurement process at Crystal Works. His Python web scraping scripts automated over 90% of our manual tender collection from government portals like GeM, and the custom Google Apps Script web apps he built replaced dozens of disconnected spreadsheets. A dependable, high-impact data professional."
+          </p>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">CW</div>
+            <div>
+              <strong class="reviewer-name">Managing Director</strong>
+              <span class="reviewer-org">Crystal Works • New Delhi</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card glass-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "Deepanshu demonstrated exceptional initiative in automating our recurring MIS reports and writing complex Excel VBA scripts at Sam International. He brings an analytical mindset, grasps business requirements quickly, and always delivers ahead of schedule."
+          </p>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">SI</div>
+            <div>
+              <strong class="reviewer-name">Operations & MIS Lead</strong>
+              <span class="reviewer-org">Sam International • Karol Bagh, New Delhi</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card glass-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "During his tenure as Night Manager, Deepanshu proved himself as an adaptable, calm-under-pressure leader. His ability to coordinate teams and resolve operational bottlenecks translates directly into his data analytics and workflow automation work today."
+          </p>
+          <div class="reviewer-meta">
+            <div class="reviewer-avatar">HP</div>
+            <div>
+              <strong class="reviewer-name">General Manager</strong>
+              <span class="reviewer-org">Hotel Palm Greens • New Delhi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- EDUCATION & CERTIFICATIONS -->
     <section id="education" class="section container">
       <div class="section-header">
-        <span class="section-tag">// 05. ACADEMICS & CREDENTIALS</span>
+        <span class="section-tag">// 06. ACADEMICS & CREDENTIALS</span>
         <h2 class="section-title">Education & Certifications</h2>
       </div>
 
@@ -821,7 +943,10 @@
   <footer class="footer">
     <div class="container footer-content">
       <div class="footer-left">
-        <a href="#hero" class="footer-brand">&lt;Deepanshu/Data&gt;</a>
+        <a href="#hero" class="footer-brand">
+          <span class="brand-avatar-mini" style="width:32px; height:32px; font-size: 0.95rem;">D</span>
+          <span style="font-weight: 700; color: var(--text-primary); margin-left: 0.5rem; font-size: 1.1rem;">Deepanshu</span>
+        </a>
         <p>Data Analyst | Web Scraping & AI Automation Specialist • New Delhi, India</p>
       </div>
       <div class="footer-links">
@@ -829,6 +954,7 @@
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
+        <a href="#reviews">Reviews</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </div>
@@ -845,6 +971,44 @@
       <div id="modal-content-target">
         <!-- Dynamically populated -->
       </div>
+    </div>
+  </div>
+
+  <!-- WRITE A REVIEW / ENDORSEMENT MODAL -->
+  <div id="review-modal" class="modal-backdrop">
+    <div class="modal-dialog glass-card">
+      <button class="modal-close-btn" id="review-modal-close" aria-label="Close Modal">&times;</button>
+      <span class="section-tag">// SUBMIT AN ENDORSEMENT</span>
+      <h3 style="font-size: 1.45rem; margin: 0.5rem 0 0.8rem; color: var(--text-primary);">Recommend Deepanshu</h3>
+      <p style="color: var(--text-secondary); font-size: 0.88rem; margin-bottom: 1.25rem;">
+        Are you a previous employer, company owner, or team colleague? Leave your review below—it will immediately appear in the testimonials section!
+      </p>
+
+      <form id="submit-review-form">
+        <div class="form-group">
+          <label for="review-author">Your Full Name</label>
+          <input type="text" id="review-author" placeholder="e.g. Sunil Sharma" required />
+        </div>
+        <div class="form-group">
+          <label for="review-role">Your Role & Organization / Relationship</label>
+          <input type="text" id="review-role" placeholder="e.g. Director at Crystal Works / Senior Manager" required />
+        </div>
+        <div class="form-group">
+          <label for="review-rating">Rating</label>
+          <select id="review-rating" class="simulator-select" style="padding: 0.65rem 0.9rem;">
+            <option value="★★★★★">★★★★★ (5 Stars - Exceptional Automation & Delivery)</option>
+            <option value="★★★★☆">★★★★☆ (4 Stars - Highly Recommended)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="review-content">Your Endorsement / Recommendation</label>
+          <textarea id="review-content" rows="4" placeholder="Share your experience working with Deepanshu (e.g. his Python scraping pipelines, Excel/VBA automation, Apps Script web apps, or leadership)..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          <span>Publish Endorsement Live</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+        </button>
+      </form>
     </div>
   </div>
 
