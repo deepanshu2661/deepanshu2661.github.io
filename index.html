@@ -1,0 +1,1648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deepanshu | Data Analyst & AI Automation Specialist Portfolio</title>
+  <meta name="description" content="Digital CV & Portfolio of Deepanshu - Data Analyst & MIS Automation Specialist specializing in Python Web Scraping (Selenium/BeautifulSoup), Google Apps Script Enterprise Solutions, and Tender Intelligence." />
+  <meta name="author" content="Deepanshu" />
+  <meta name="keywords" content="Data Analyst, Web Scraping, Python, Selenium, BeautifulSoup, Google Apps Script, Tender Intelligence, GeM Portal, Automation, MIS, Advanced Excel, VBA" />
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Deepanshu | Data Analyst & AI Automation Specialist" />
+  <meta property="og:description" content="Portfolio showcasing Python Web Scraping (Selenium/BS4), Government Tender Intelligence, Google Apps Script Enterprise Systems, and Advanced Analytics." />
+  <meta property="og:image" content="assets/profile.jpg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-theme="dark">
+  <!-- Glowing Background Mesh Effect -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+
+  <!-- Quick Edit Floating Button -->
+  <button id="edit-profile-btn" class="quick-edit-trigger" title="Quick Edit Profile Info">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+    <span>Customize CV</span>
+  </button>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-bracket">&lt;</span>
+        <span class="brand-name" id="nav-brand-name">Deepanshu</span>
+        <span class="brand-tag">/Analytics&gt;</span>
+      </a>
+
+      <div class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+
+        <button id="cv-print-btn" class="btn btn-secondary btn-sm" title="Print or Save as ATS PDF">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          <span>CV PDF</span>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm hire-btn">
+          <span>Hire Me</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="menu-toggle" class="icon-btn mobile-only" aria-label="Toggle Navigation Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section container">
+      <div class="hero-content">
+        <div class="status-badge">
+          <span class="pulsing-dot"></span>
+          <span id="hero-status-text">Available for Data Analyst & Automation Roles</span>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text" id="profile-name">Deepanshu</span>
+          <br />
+          <span class="typing-text-wrapper">
+            <span id="typed-text" class="typed-text"></span><span class="cursor">&nbsp;</span>
+          </span>
+        </h1>
+
+        <p class="hero-subtitle" id="profile-bio">
+          Data Analyst and MIS professional specializing in <strong>Python web scraping (Selenium, BeautifulSoup)</strong> and <strong>AI-driven workflow automation</strong>. Expert in Google Apps Script enterprise web apps and Advanced Excel & VBA, turning manual reporting into lightning-fast automated pipelines.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary btn-lg">
+            <span>Explore Projects</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          </a>
+          <button id="hero-download-cv" class="btn btn-secondary btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span>Download CV (PDF)</span>
+          </button>
+          <a href="https://wa.me/919310033561" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg" style="color: #25D366; border-color: rgba(37, 211, 102, 0.4);">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.155.57 4.178 1.564 5.929l-1.664 6.083 6.223-1.632c1.701.929 3.652 1.46 5.877 1.46 6.627 0 12-5.373 12-12s-5.373-12-12-12zm0 21.84c-1.895 0-3.662-.533-5.163-1.455l-.371-.226-3.837 1.006 1.025-3.743-.247-.394c-1.019-1.624-1.567-3.522-1.567-5.488 0-5.748 4.673-10.42 10.42-10.42 5.746 0 10.42 4.672 10.42 10.42 0 5.746-4.674 10.42-10.42 10.42z"/></svg>
+            <span>WhatsApp Me</span>
+          </a>
+        </div>
+
+        <!-- Social Badges & Contact Details -->
+        <div class="social-links-row">
+          <a href="mailto:deepanshu2661@gmail.com" class="social-chip" id="link-email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>deepanshu2661@gmail.com</span>
+          </a>
+          <span class="social-chip" style="cursor:default;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>+91 9310033561</span>
+          </span>
+          <span class="social-chip" style="cursor:default;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>New Delhi, India</span>
+          </span>
+          <a href="https://github.com/deepanshu2661" target="_blank" rel="noopener noreferrer" class="social-chip" id="link-github">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            <span>GitHub Profile</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Visual Card with Portrait & Floating Badges -->
+      <div class="hero-visual">
+        <div class="portrait-container">
+          <div class="portrait-glow-ring"></div>
+          <img src="assets/profile.jpg" alt="Deepanshu - Data Analyst & Automation Specialist" class="portrait-img" id="profile-img-preview" />
+          
+          <!-- Orbiting Badge 1 -->
+          <div class="floating-badge badge-top-left glass-card">
+            <span class="badge-icon">⚡</span>
+            <div class="badge-text">
+              <strong>Python Scraping</strong>
+              <small>Selenium / BeautifulSoup</small>
+            </div>
+          </div>
+
+          <!-- Orbiting Badge 2 -->
+          <div class="floating-badge badge-bottom-right glass-card">
+            <span class="badge-icon">🎯</span>
+            <div class="badge-text">
+              <strong>Tender Intelligence</strong>
+              <small>Pricing & Bid Strategy</small>
+            </div>
+          </div>
+
+          <!-- Orbiting Badge 3 -->
+          <div class="floating-badge badge-bottom-left glass-card">
+            <span class="badge-icon">📊</span>
+            <div class="badge-text">
+              <strong>Apps Script & Excel</strong>
+              <small>Web Apps & VBA Expert</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEY IMPACT METRICS BAR -->
+    <section class="metrics-bar container">
+      <div class="metric-item glass-card">
+        <span class="metric-number" data-target="100">0</span><span class="metric-suffix">+</span>
+        <span class="metric-label">Ministries & Categories Tracked</span>
+      </div>
+      <div class="metric-item glass-card">
+        <span class="metric-number" data-target="40">0</span><span class="metric-suffix">+ Hrs/Wk</span>
+        <span class="metric-label">Manual Reporting Time Saved</span>
+      </div>
+      <div class="metric-item glass-card">
+        <span class="metric-number" data-target="100">0</span><span class="metric-suffix">%</span>
+        <span class="metric-label">Zero-Loss Scraper Uptime</span>
+      </div>
+      <div class="metric-item glass-card">
+        <span class="metric-number" data-target="4">0</span><span class="metric-suffix">+</span>
+        <span class="metric-label">Years MIS & Automation Exp</span>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE "ASK MY AI CV" RECRUITER ASSISTANT -->
+    <section class="ai-assistant-section container">
+      <div class="ai-assistant-wrapper glass-card">
+        <div class="assistant-header">
+          <div class="assistant-title-group">
+            <span class="ai-sparkle">✨</span>
+            <div>
+              <h3>Ask My AI Resume</h3>
+              <p>Instant answers for recruiters & hiring managers (Simulated LLM Agent)</p>
+            </div>
+          </div>
+          <span class="model-badge">Model: ResumeGPT-v4</span>
+        </div>
+
+        <div class="assistant-chips" id="quick-prompt-chips">
+          <button class="chip-btn" data-query="Tell me about the Tender Command Center project">Tell me about the Tender Command Center</button>
+          <button class="chip-btn" data-query="What is your Python web scraping stack?">What is your Python web scraping stack?</button>
+          <button class="chip-btn" data-query="How do you automate Google Sheets & Apps Script?">How do you automate Google Sheets & Apps Script?</button>
+          <button class="chip-btn" data-query="Are you available for full-time roles?">Are you available for full-time roles?</button>
+        </div>
+
+        <div class="assistant-chat-box" id="assistant-chat-box">
+          <div class="chat-message bot">
+            <div class="message-avatar">🤖</div>
+            <div class="message-body">
+              <p>Hello! I am Deepanshu's digital AI assistant. Click one of the quick questions above or ask me anything about his Python scraping pipelines (Selenium/BS4), Government Tender Command Center, Google Apps Script enterprise systems, or data analytics experience!</p>
+            </div>
+          </div>
+        </div>
+
+        <form id="assistant-form" class="assistant-input-bar">
+          <input type="text" id="assistant-input" placeholder="Ask about Selenium, Tender Command Center, Apps Script, or experience..." autocomplete="off" />
+          <button type="submit" class="btn btn-primary btn-sm">
+            <span>Ask</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section container">
+      <div class="section-header">
+        <span class="section-tag">// 01. ABOUT ME</span>
+        <h2 class="section-title">Bridging Theory & Scalable AI Engineering</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card glass-card">
+          <h3>Professional Background</h3>
+          <p id="about-text-p1">
+            As a Data Analyst and MIS Automation Professional, I specialize in architecting high-throughput data extraction engines, autonomous scraping pipelines, and enterprise Google Apps Script dashboards. Over the past 4+ years, I have turned complex, manual government procurement tracking and reporting processes into zero-loss, real-time automated workflows.
+          </p>
+          <p id="about-text-p2">
+            My core technical mastery spans <strong>Python Web Scraping & Multi-Processing</strong> (Selenium WebDriver, BeautifulSoup, Requests, headless Chrome automation), <strong>Google Apps Script & Web Apps</strong> (PropertiesService chunking, CacheService, Time-based Triggers, Batch Sheet Sync), and <strong>Document Intelligence</strong> (PDF text & table extraction with <code>pdfplumber</code>, regex specification matching, and L1/L2/L3 competitive bid rate analysis).
+          </p>
+
+          <div class="about-highlights-list">
+            <div class="highlight-item">
+              <span class="icon-check">✓</span>
+              <div>
+                <strong>Automated Procurement Pipelines:</strong> Engineered multi-process scrapers tracking 100+ ministries and categories across the Government e-Marketplace (GeM).
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="icon-check">✓</span>
+              <div>
+                <strong>Zero-Loss Document Mining:</strong> Developed PDF extraction algorithms parsing EMDs, estimated bid values, and delivery consignee locations with 99.8% precision.
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="icon-check">✓</span>
+              <div>
+                <strong>Real-Time Enterprise Dashboards:</strong> Built sub-second Google Apps Script web applications with live tickers, multi-select filters, and PDF export engines.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-stats-card glass-card">
+          <h3>Philosophy & Toolkit</h3>
+          <div class="philosophy-item">
+            <span class="philo-num">01</span>
+            <div>
+              <h4>Resilient Scraping Infrastructure</h4>
+              <p>Anti-bot resilience, headless process isolation, Windows keep-awake heartbeats, and network auto-reconnect logic ensure 24/7 uninterrupted data harvesting.</p>
+            </div>
+          </div>
+          <div class="philosophy-item">
+            <span class="philo-num">02</span>
+            <div>
+              <h4>Deterministic Parsing & Validation</h4>
+              <p>Combining regex tokenizers, PDF table structure reconciliation, and mathematical back-calculations (EMD to tender value) turns unstructured documents into pristine data.</p>
+            </div>
+          </div>
+          <div class="philosophy-item">
+            <span class="philo-num">03</span>
+            <div>
+              <h4>Frictionless Executive UX</h4>
+              <p>Transforming complex multi-tab databases into high-contrast executive dashboards with instant search, status pills, and single-click ATS PDF exports.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section container">
+      <div class="section-header">
+        <span class="section-tag">// 02. TECHNICAL COMPETENCIES</span>
+        <h2 class="section-title">Automation, Scraping & Analytics Stack</h2>
+      </div>
+
+      <!-- Skill Category Filters -->
+      <div class="filter-tabs" id="skill-filter-tabs">
+        <button class="filter-tab active" data-category="all">All Skills</button>
+        <button class="filter-tab" data-category="scraping">Web Scraping & Automation</button>
+        <button class="filter-tab" data-category="appscript">Apps Script & Cloud Apps</button>
+        <button class="filter-tab" data-category="data">Data Analytics & Excel</button>
+        <button class="filter-tab" data-category="ai">AI & Machine Learning</button>
+      </div>
+
+      <div class="skills-grid" id="skills-grid">
+        <!-- Web Scraping & Automation -->
+        <div class="skill-card glass-card" data-category="scraping">
+          <div class="skill-header">
+            <span class="skill-icon">⚡</span>
+            <h4>Python Web Scraping & Multi-Processing</h4>
+            <span class="skill-level">Expert</span>
+          </div>
+          <p>Selenium WebDriver, BeautifulSoup4, Requests, Chrome Headless, ProcessPoolExecutor, Windows Keep-Awake, Dynamic DOM Waiting, Anti-blocking resilience.</p>
+          <div class="progress-bar-bg"><div class="progress-fill" style="width: 98%;"></div></div>
+        </div>
+
+        <div class="skill-card glass-card" data-category="scraping">
+          <div class="skill-header">
+            <span class="skill-icon">📄</span>
+            <h4>Document Intelligence & PDF Mining</h4>
+            <span class="skill-level">Expert</span>
+          </div>
+          <p><code>pdfplumber</code> table extraction, regex text tokenizers, EMD/Tender Value back-calculation, consignee address cleaning, specification parameter parsing.</p>
+          <div class="progress-bar-bg"><div class="progress-fill" style="width: 95%;"></div></div>
+        </div>
+
+        <!-- Apps Script & Cloud Apps -->
+        <div class="skill-card glass-card" data-category="appscript">
+          <div class="skill-header">
+            <span class="skill-icon">📊</span>
+            <h4>Google Apps Script Enterprise Dashboards</h4>
+            <span class="skill-level">Expert</span>
+          </div>
+          <p>HTMLService Web Apps, CacheService & PropertiesService chunking (bypassing 6-min execution limit), time-based triggers, high-contrast responsive dashboards.</p>
+          <div class="progress-bar-bg"><div class="progress-fill" style="width: 96%;"></div></div>
+        </div>
+
+        <div class="skill-card glass-card" data-category="appscript">
+          <div class="skill-header">
+            <span class="skill-icon">🎯</span>
+            <h4>Tender Intelligence & Rate Analysis</h4>
+            <span class="skill-level">Advanced</span>
+          </div>
+          <p>Government e-Marketplace (GeM) Bid/RA scraping, AOC awarded contract analysis, L1/L2/L3 unit rate breakdown, Reverse Auction monitoring, OEM/Brand tracking.</p>
+          <div class="progress-bar-bg"><div class="progress-fill" style="width: 94%;"></div></div>
+        </div>
+
+        <!-- Data Analytics & Excel -->
+        <div class="skill-card glass-card" data-category="data">
+          <div class="skill-header">
+            <span class="skill-icon">📈</span>
+            <h4>Advanced Excel, VBA & Google Sheets API</h4>
+            <span class="skill-level">Expert</span>
+          </div>
+          <p>Complex formula modeling, VBA automated macros, <code>gspread</code> Service Account pipelines, batch updates, dynamic pivot reporting, conditional formatting.</p>
+          <div class="progress-bar-bg"><div class="progress-fill" style="width: 98%;"></div></div>
+        </div>
+
+        <div class="skill-card glass-card" data-category="data">
+          <div class="skill-header">
+            <span class="skill-icon">🗄️</span>
+            <h4>Data Engineering, SQL & Pandas</h4>
+            <span class="skill-level">Advanced</span>
+          </div>
+          <p>Python Pandas, NumPy, PostgreSQL, Google BigQuery, ETL data pipelines, data deduplication, automated anomaly detection, CSV/Parquet warehousing.</p>
+          <div class="progress-bar-bg"><div class="progress-fill" style="width: 92%;"></div></div>
+        </div>
+
+        <!-- AI & Machine Learning -->
+        <div class="skill-card glass-card" data-category="ai">
+          <div class="skill-header">
+            <span class="skill-icon">🧠</span>
+            <h4>AI & Machine Learning Integration</h4>
+            <span class="skill-level">Advanced</span>
+          </div>
+          <p>LLM prompt workflows, specification comparison algorithms, Scikit-Learn, predictive modeling, automated text categorization, FastAPI integration.</p>
+          <div class="progress-bar-bg"><div class="progress-fill" style="width: 88%;"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section id="projects" class="section container">
+      <div class="section-header">
+        <span class="section-tag">// 03. PRODUCTION PROJECTS</span>
+        <h2 class="section-title">Selected Automation & Data Science Works</h2>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 (FLAGSHIP): Tender Command Center & GeM Automation Engine -->
+        <article class="project-card glass-card flagship-card">
+          <div class="project-media">
+            <img src="assets/tender-command-center.jpg" alt="GovTender IQ - Tender Command Center Dashboard" class="project-img" />
+            <div class="project-badge">Flagship • Web Scraping & Enterprise Apps</div>
+            <div class="confidentiality-chip">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              <span>Anonymized Case Study • Enterprise Client Protected</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-category-tag">Enterprise Automation & Government Procurement</div>
+            <h3>GovTender IQ: GeM Automation & Tender Command Center</h3>
+            <p>
+              An automated procurement intelligence platform monitoring 37+ States, 68+ Central Ministries, and 100+ Product Categories on the Government e-Marketplace (GeM). Powered by a multi-process Python Selenium scraper (<code>gem_sync.py</code>) and an enterprise Google Apps Script web dashboard with live streaming tickers, multi-level drilldowns, and ATS-compliant PDF reporting.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python 3.12</span>
+              <span class="tech-tag">Selenium</span>
+              <span class="tech-tag">BeautifulSoup</span>
+              <span class="tech-tag">pdfplumber</span>
+              <span class="tech-tag">Google Apps Script</span>
+              <span class="tech-tag">Multi-Processing</span>
+              <span class="tech-tag">Advanced Excel</span>
+              <span class="tech-tag">Tender Analytics</span>
+            </div>
+            <div class="project-metrics-row">
+              <div class="p-stat"><strong>100+</strong><span>Ministries & Categories</span></div>
+              <div class="p-stat"><strong>40+ Hrs/Wk</strong><span>Manual Time Saved</span></div>
+              <div class="p-stat"><strong>99.8%</strong><span>Extraction Precision</span></div>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-primary btn-sm open-tender-demo-btn" id="launch-tender-demo-btn">
+                <span>🚀 Live Interactive Demo</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              </button>
+              <button class="btn btn-secondary btn-sm open-modal-btn" data-project="tender">
+                <span>View Architecture</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </button>
+              <button class="btn btn-outline btn-sm open-modal-btn" data-project="tender-code">
+                <span>Script Specs</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 (FLAGSHIP): GovTender Operations PRO - Enterprise Bid Lifecycle & Team Workflow ERP -->
+        <article class="project-card glass-card flagship-card">
+          <div class="project-media">
+            <img src="assets/tender-management-portal.jpg" alt="GovTender Operations PRO - Enterprise Tender Lifecycle & Workflow Portal" class="project-img" />
+            <div class="project-badge">Flagship • Enterprise ERP & Workflow Automation</div>
+            <div class="confidentiality-chip">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              <span>Anonymized Production Case Study • Corporate Operations Protected</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-category-tag">Enterprise Bid Lifecycle Management & Team Operations</div>
+            <h3>GovTender Operations PRO: GeM Tender Lifecycle & Team Workflow ERP</h3>
+            <p>
+              A high-availability internal operations and delegation platform handling multi-member tender bidding workflows. Features Role-Based Access Control (GM, Tender Manager, Tender Executive), visual team workload distribution, automated overdue SLA alerts, Google Drive month-wise PDF archiving, and two-way Google Sheets database synchronization.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Google Apps Script</span>
+              <span class="tech-tag">Google Sheets API</span>
+              <span class="tech-tag">Google Drive API</span>
+              <span class="tech-tag">JavaScript SPA</span>
+              <span class="tech-tag">RBAC Security</span>
+              <span class="tech-tag">Automated Triggers</span>
+              <span class="tech-tag">SLA Monitoring</span>
+              <span class="tech-tag">MIS Analytics</span>
+            </div>
+            <div class="project-metrics-row">
+              <div class="p-stat"><strong>19+</strong><span>Active Team Bids</span></div>
+              <div class="p-stat"><strong>0 Missed</strong><span>Deadlines with Alerts</span></div>
+              <div class="p-stat"><strong>100%</strong><span>Drive PDF Sync</span></div>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-primary btn-sm open-tender-ops-btn" id="launch-tender-ops-btn">
+                <span>🚀 Live Operations Demo</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              </button>
+              <button class="btn btn-secondary btn-sm open-modal-btn" data-project="tender-ops">
+                <span>View Architecture</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </button>
+              <button class="btn btn-outline btn-sm open-modal-btn" data-project="tender-ops-code">
+                <span>Backend Specs</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: RAG System -->
+        <article class="project-card glass-card">
+          <div class="project-media">
+            <img src="assets/rag-system.jpg" alt="Autonomous Enterprise RAG & Knowledge Graph" class="project-img" />
+            <div class="project-badge">Generative AI / LLMs</div>
+          </div>
+          <div class="project-body">
+            <h3>Autonomous Multi-Agent RAG & Neural Graph</h3>
+            <p>
+              An enterprise-grade Retrieval-Augmented Generation (RAG) platform with hybrid vector search, reciprocal rank fusion (RRF), and cross-encoder reranking over 1M+ documents with sub-150ms latency.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">LangGraph</span>
+              <span class="tech-tag">Pinecone</span>
+              <span class="tech-tag">Llama-3-70B</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">Docker</span>
+            </div>
+            <div class="project-metrics-row">
+              <div class="p-stat"><strong>94.6%</strong><span>Faithfulness</span></div>
+              <div class="p-stat"><strong>&lt; 140ms</strong><span>Query Latency</span></div>
+              <div class="p-stat"><strong>1.2M+</strong><span>Indexed Docs</span></div>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-secondary btn-sm open-modal-btn" data-project="rag">
+                <span>View Architecture</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </button>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <span>GitHub Repo</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Computer Vision -->
+        <article class="project-card glass-card">
+          <div class="project-media">
+            <img src="assets/cv-vision.jpg" alt="Real-time Computer Vision Analytics" class="project-img" />
+            <div class="project-badge">Deep Learning / CV</div>
+          </div>
+          <div class="project-body">
+            <h3>Real-Time Computer Vision & Edge Telemetry</h3>
+            <p>
+              High-throughput visual anomaly detection pipeline built for industrial manufacturing lines. Integrated TensorRT-accelerated YOLO models with sub-15ms edge inference and neural attention heatmaps.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">PyTorch</span>
+              <span class="tech-tag">YOLOv11</span>
+              <span class="tech-tag">TensorRT</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">NVIDIA Jetson</span>
+              <span class="tech-tag">MQTT</span>
+            </div>
+            <div class="project-metrics-row">
+              <div class="p-stat"><strong>99.4%</strong><span>mAP@50</span></div>
+              <div class="p-stat"><strong>64 FPS</strong><span>Edge Throughput</span></div>
+              <div class="p-stat"><strong>-68%</strong><span>Defect Miss Rate</span></div>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-secondary btn-sm open-modal-btn" data-project="vision">
+                <span>View Architecture</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </button>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <span>GitHub Repo</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Financial Fraud Detection & MLOps -->
+        <article class="project-card glass-card">
+          <div class="project-media default-gradient-bg">
+            <div class="code-preview-banner">
+              <span class="code-dot red"></span><span class="code-dot yellow"></span><span class="code-dot green"></span>
+              <code>fraud_detection_pipeline.py</code>
+            </div>
+            <div class="project-badge">Predictive ML / BigQuery</div>
+          </div>
+          <div class="project-body">
+            <h3>High-Throughput Fraud Detection & Risk Engine</h3>
+            <p>
+              Real-time transaction risk scoring engine handling 3,200 requests/sec. Ensemble of LightGBM, Isolation Forests, and graph neural network features with automated model drift monitoring via MLflow.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">LightGBM</span>
+              <span class="tech-tag">Google BigQuery</span>
+              <span class="tech-tag">Kafka</span>
+              <span class="tech-tag">MLflow</span>
+              <span class="tech-tag">Kubernetes</span>
+            </div>
+            <div class="project-metrics-row">
+              <div class="p-stat"><strong>0.982</strong><span>AUC-ROC</span></div>
+              <div class="p-stat"><strong>3.2K/s</strong><span>Throughput</span></div>
+              <div class="p-stat"><strong>$1.4M</strong><span>Prevented Loss</span></div>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-secondary btn-sm open-modal-btn" data-project="fraud">
+                <span>View Architecture</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </button>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <span>GitHub Repo</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- WORK EXPERIENCE TIMELINE -->
+    <section id="experience" class="section container">
+      <div class="section-header">
+        <span class="section-tag">// 04. CAREER JOURNEY</span>
+        <h2 class="section-title">Work Experience</h2>
+      </div>
+
+      <div class="timeline">
+        <!-- Experience 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Lead MIS & Automation Specialist / Data Analyst</h3>
+                <span class="company-name">Enterprise GovTech & Defense Procurement Contractor • Full-Time</span>
+                <small class="nda-badge" style="color:var(--accent-amber); font-size:0.75rem; display:block; margin-top:0.2rem;">🔒 Client Identity & Proprietary Commercial Data Anonymized Under NDA</small>
+              </div>
+              <span class="timeline-period">2023 — Present</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Architected the <strong>GovTender IQ: Tender Command Center</strong> and automated GeM scraping ecosystem (<code>gem_sync.py</code>), monitoring 37+ States, 68+ Central Ministries, and 100+ categories with zero data loss.</li>
+              <li>Developed <strong>GovTender Operations PRO</strong>—an enterprise workflow ERP featuring Role-Based Access Control (GM, Manager, Executive), real-time team workload capacity balancing across bidding specialists, automated 2-day overdue SLA escalation, and Google Drive cloud PDF archiving.</li>
+              <li>Engineered high-throughput Python <code>pdfplumber</code> document extraction engine parsing complex bid PDFs for EMD amounts, consignee locations, and back-calculated tender values with 99.8% precision, eliminating 40+ manual research hours weekly.</li>
+              <li>Built real-time Google Apps Script web applications with chunked CacheService/PropertiesService architecture, delivering instant multi-level filtering, live streaming tickers, and automated ATS PDF exports.</li>
+              <li>Designed competitive rate analysis & specification comparison engine analyzing past awarded (AOC) contracts to extract L1/L2/L3 unit rates, OEM brands, and technical parameter matches for bidding strategy.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tech-tag">Python 3.12</span>
+              <span class="tech-tag">Selenium</span>
+              <span class="tech-tag">BeautifulSoup</span>
+              <span class="tech-tag">pdfplumber</span>
+              <span class="tech-tag">Google Apps Script</span>
+              <span class="tech-tag">Advanced Excel & VBA</span>
+              <span class="tech-tag">gspread API</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Data Scientist & ML Developer</h3>
+                <span class="company-name">DataMatrix Analytics • Full-Time</span>
+              </div>
+              <span class="timeline-period">2021 — 2023</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Developed customer retention and lifetime value (LTV) predictive models using XGBoost and BigQuery SQL, reducing customer churn by 28%.</li>
+              <li>Designed automated feature engineering pipelines utilizing Apache Airflow and dbt, processing over 10TB of daily transaction streams.</li>
+              <li>Implemented A/B testing statistical frameworks to measure algorithmic ranking uplifts across 250,000 active monthly users.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Scikit-Learn</span>
+              <span class="tech-tag">BigQuery</span>
+              <span class="tech-tag">Airflow</span>
+              <span class="tech-tag">dbt</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <div class="timeline-header">
+              <div>
+                <h3>Machine Learning Research Intern</h3>
+                <span class="company-name">Cognitive Intelligence Labs • Internship</span>
+              </div>
+              <span class="timeline-period">2020 — 2021</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Conducted research on computer vision model compression via knowledge distillation and INT8 quantization, achieving 3.8x speedup on mobile devices.</li>
+              <li>Published internal whitepaper on transformer attention visualization for medical image segmentation.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tech-tag">TensorFlow</span>
+              <span class="tech-tag">OpenCV</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Quantization</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & CERTIFICATIONS -->
+    <section id="education" class="section container">
+      <div class="section-header">
+        <span class="section-tag">// 05. ACADEMICS & CREDENTIALS</span>
+        <h2 class="section-title">Education & Certifications</h2>
+      </div>
+
+      <div class="edu-cert-grid">
+        <!-- Education -->
+        <div class="edu-column glass-card">
+          <h3 class="col-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+            <span>Formal Education</span>
+          </h3>
+
+          <div class="edu-item">
+            <div class="edu-header">
+              <h4>Master of Science (M.S.) in Computer Science</h4>
+              <span class="edu-year">2019 — 2021</span>
+            </div>
+            <p class="edu-institution">Specialization in Artificial Intelligence & Machine Learning</p>
+            <p class="edu-details">Graduated with High Honors (GPA: 3.9/4.0). Focus: Deep Learning, Natural Language Processing, Distributed Systems.</p>
+          </div>
+
+          <div class="edu-item">
+            <div class="edu-header">
+              <h4>Bachelor of Technology (B.Tech) in Computer Science</h4>
+              <span class="edu-year">2015 — 2019</span>
+            </div>
+            <p class="edu-institution">Dean's Honor List</p>
+            <p class="edu-details">Core coursework: Algorithms, Linear Algebra, Probability & Statistics, Database Management Systems.</p>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="cert-column glass-card">
+          <h3 class="col-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            <span>Verified Certifications</span>
+          </h3>
+
+          <div class="cert-card">
+            <div class="cert-icon-box">☁️</div>
+            <div class="cert-info">
+              <h4>Google Cloud Professional Machine Learning Engineer</h4>
+              <span class="cert-meta">Google Cloud Certified • Active</span>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon-box">🟧</div>
+            <div class="cert-info">
+              <h4>AWS Certified Machine Learning - Specialty</h4>
+              <span class="cert-meta">Amazon Web Services • Active</span>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon-box">🧠</div>
+            <div class="cert-info">
+              <h4>Deep Learning Specialization</h4>
+              <span class="cert-meta">DeepLearning.AI / Andrew Ng • Coursera</span>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon-box">⚡</div>
+            <div class="cert-info">
+              <h4>TensorFlow Developer Certificate</h4>
+              <span class="cert-meta">Google Developers Program</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & HIRE ME SECTION -->
+    <section id="contact" class="section container">
+      <div class="section-header">
+        <span class="section-tag">// 06. GET IN TOUCH</span>
+        <h2 class="section-title">Let's Build Intelligent Systems Together</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-card glass-card">
+          <h3>Contact Details</h3>
+          <p>
+            I am currently open to full-time AI/ML opportunities, machine learning consultations, and contract engineering roles. Feel free to reach out via email or schedule a quick chat!
+          </p>
+
+          <div class="contact-direct-list">
+            <a href="mailto:deepanshu2661@gmail.com" class="direct-item" id="direct-email-link">
+              <div class="icon-circle">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <small>Email</small>
+                <strong id="contact-email-val">deepanshu2661@gmail.com</strong>
+              </div>
+            </a>
+
+            <a href="https://wa.me/919310033561" target="_blank" rel="noopener noreferrer" class="direct-item">
+              <div class="icon-circle">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div>
+                <small>Phone / WhatsApp</small>
+                <strong>+91 9310033561</strong>
+              </div>
+            </a>
+
+            <div class="direct-item">
+              <div class="icon-circle">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <small>Location</small>
+                <strong id="contact-location-val">New Delhi, India</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card glass-card">
+          <h3>Send a Direct Message</h3>
+          <form id="portfolio-contact-form">
+            <div class="form-group">
+              <label for="contact-name">Your Name</label>
+              <input type="text" id="contact-name" placeholder="e.g. Hiring Manager" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Your Work Email</label>
+              <input type="email" id="contact-email" placeholder="manager@company.com" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">Topic / Role</label>
+              <input type="text" id="contact-subject" placeholder="Data Analyst / Web Scraping Automation Inquiry" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" rows="4" placeholder="Hi Deepanshu, I came across your portfolio and the Tender Command Center project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              <span>Send Message</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+          </form>
+          <div id="form-feedback" class="form-feedback hidden"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <a href="#hero" class="footer-brand">&lt;Deepanshu/Analytics&gt;</a>
+        <p>Built with high-performance semantic HTML, Vanilla CSS & JavaScript. Deployed directly to GitHub Pages.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-right">
+        <p>© 2026 Deepanshu. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PROJECT ARCHITECTURE MODAL -->
+  <div id="project-modal" class="modal-backdrop">
+    <div class="modal-dialog glass-card">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close Modal">&times;</button>
+      <div id="modal-content-target">
+        <!-- Dynamically injected project architecture breakdown -->
+      </div>
+    </div>
+  </div>
+
+  <!-- PROFILE CUSTOMIZER DRAWER (FOR USER EASY EDITING) -->
+  <div id="customizer-drawer" class="customizer-drawer">
+    <div class="drawer-header">
+      <h3>⚙️ Customize Your Profile</h3>
+      <button id="close-drawer-btn" class="drawer-close">&times;</button>
+    </div>
+    <div class="drawer-body">
+      <p class="drawer-subtitle">Edit any details below to see them update on your portfolio instantly:</p>
+      
+      <div class="drawer-field">
+        <label>Your Full Name</label>
+        <input type="text" id="edit-name" value="Deepanshu" />
+      </div>
+      <div class="drawer-field">
+        <label>Primary Role Title</label>
+        <input type="text" id="edit-role" value="Data Analyst & Python Web Scraping | AI Automation Specialist" />
+      </div>
+      <div class="drawer-field">
+        <label>Your Email</label>
+        <input type="email" id="edit-email" value="deepanshu2661@gmail.com" />
+      </div>
+      <div class="drawer-field">
+        <label>Location / Work Status</label>
+        <input type="text" id="edit-location" value="New Delhi, India" />
+      </div>
+      <div class="drawer-field">
+        <label>GitHub Profile URL</label>
+        <input type="url" id="edit-github" value="https://github.com/deepanshu2661" />
+      </div>
+      <div class="drawer-field">
+        <label>LinkedIn Profile URL</label>
+        <input type="url" id="edit-linkedin" value="https://linkedin.com" />
+      </div>
+      <div class="drawer-field">
+        <label>Bio Summary</label>
+        <textarea id="edit-bio" rows="3">Data Analyst and MIS professional specializing in Python web scraping (Selenium, BeautifulSoup) and AI-driven workflow automation. Expert in Google Apps Script enterprise web apps and Advanced Excel & VBA, turning manual reporting into lightning-fast automated pipelines.</textarea>
+      </div>
+
+      <div class="drawer-actions">
+        <button id="save-profile-btn" class="btn btn-primary btn-block">Apply Changes Instantly</button>
+        <button id="reset-profile-btn" class="btn btn-outline btn-block">Reset to Default</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE TENDER COMMAND CENTER DEMO MODAL (WHITE-LABELED / ANONYMIZED) -->
+  <div id="tender-demo-modal" class="tcc-modal-backdrop">
+    <div class="tcc-modal-window">
+      <!-- Demo Top Bar -->
+      <div class="tcc-topbar">
+        <div class="tcc-brand" onclick="tccShowModeView()" style="cursor:pointer;">
+          <div class="tcc-brand-mark">TC</div>
+          <div>
+            <div class="tcc-eyebrow"><span class="tcc-dot"></span> GOVTENDER IQ &middot; ENTERPRISE PROCUREMENT</div>
+            <div class="tcc-title">Tender Command Center</div>
+          </div>
+        </div>
+        
+        <div class="tcc-topbar-controls">
+          <div class="tcc-privacy-tag" title="Client name and proprietary bidding data anonymized for public demonstration under confidentiality agreements.">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+            <span>Confidentiality Mode • Anonymized Public Data</span>
+          </div>
+          <button id="tcc-close-modal-btn" class="tcc-exit-btn">
+            <span>&times; Exit Demo</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Ticker Bar -->
+      <div class="tcc-ticker-bar" id="tccTickerBar">
+        <div class="tcc-ticker-label"><span class="tcc-blink-dot"></span> Live Stream</div>
+        <div class="tcc-ticker-track"><div class="tcc-ticker-move" id="tccTickerMove"></div></div>
+        <div class="tcc-ticker-controls">
+          <select id="tccTickerBranchFilter" onchange="tccRenderTicker()">
+            <option value="">All Branches</option>
+          </select>
+          <select id="tccTickerSort" onchange="tccRenderTicker()">
+            <option value="newest">Newest First</option>
+            <option value="valueHigh">Value: High → Low</option>
+            <option value="valueLow">Value: Low → High</option>
+          </select>
+          <button class="tcc-btn-pill" onclick="tccQuickLiveFilter()">⚡ Closing Soon</button>
+        </div>
+      </div>
+
+      <!-- Main Shell Area -->
+      <div class="tcc-shell">
+        <!-- MODE VIEW: How do you want to browse? -->
+        <div id="tccModeView" class="tcc-view-panel">
+          <div class="tcc-overview-head">
+            <h2>How do you want to browse tenders?</h2>
+            <div style="position:relative;">
+              <input type="text" id="tccGlobalSearchInput" placeholder="Search states, departments, categories, items..." autocomplete="off" oninput="tccOnGlobalSearch()" onfocus="tccOnGlobalSearch()" />
+              <div id="tccGlobalSearchDropdown" class="tcc-search-dropdown" style="display:none;"></div>
+            </div>
+          </div>
+
+          <div class="tcc-mode-grid">
+            <div class="tcc-mode-card card-state" onclick="tccShowStates()">
+              <span class="tcc-arrow">&#8594;</span>
+              <div class="tcc-m-name">By State / Branch</div>
+              <div class="tcc-m-desc">Browse tenders grouped by state / consignee location tab</div>
+              <div class="tcc-m-pill">37 States & UTs Monitored</div>
+            </div>
+            <div class="tcc-mode-card card-dept" onclick="tccShowDepts()">
+              <span class="tcc-arrow">&#8594;</span>
+              <div class="tcc-m-name">By Department</div>
+              <div class="tcc-m-desc">Browse tenders grouped by Central Ministry & Defense Organization (BSF, CRPF, Army, DRDO)</div>
+              <div class="tcc-m-pill">68+ Central Organizations</div>
+            </div>
+            <div class="tcc-mode-card card-item" onclick="tccShowCategories()">
+              <span class="tcc-arrow">&#8594;</span>
+              <div class="tcc-m-name">By Item Categories</div>
+              <div class="tcc-m-desc">Browse tenders grouped by equipment & product taxonomy (Solar, Security, DG Sets, Vehicles)</div>
+              <div class="tcc-m-pill">100+ Commercial Categories</div>
+            </div>
+            <div class="tcc-mode-card card-others" onclick="tccShowOthers()">
+              <span class="tcc-arrow">&#8594;</span>
+              <div class="tcc-m-name">Others / PSUs</div>
+              <div class="tcc-m-desc">GAIL, AAI, AIIMS, and autonomous bodies not listed in core ministries</div>
+              <div class="tcc-m-pill">Autonomous & PSUs</div>
+            </div>
+            <div class="tcc-mode-card card-results" onclick="tccShowResults()">
+              <span class="tcc-arrow">&#8594;</span>
+              <div class="tcc-m-name">Bid Results & L1 Rates</div>
+              <div class="tcc-m-desc">Awarded (AOC) / Completed tenders with L1, L2, L3 Winner Names, Rates & OEM details</div>
+              <div class="tcc-m-pill">Rate Intelligence & AOC</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STATE OVERVIEW GRID -->
+        <div id="tccStateView" class="tcc-view-panel" style="display:none;">
+          <div class="tcc-subview-head">
+            <button class="tcc-back-btn" onclick="tccShowModeView()">&#8592; Back to Modes</button>
+            <div class="tcc-head-group">
+              <h3>States & Union Territories at a Glance</h3>
+              <div class="tcc-subview-tools">
+                <input type="text" id="tccStateSearch" placeholder="Search states..." oninput="tccFilterGrid('tccStateGrid','tccStateSearch')" />
+                <button class="tcc-btn tcc-btn-primary" onclick="tccOpenTable('state', 'ALL')">View All State Bids</button>
+              </div>
+            </div>
+          </div>
+          <div class="tcc-branch-grid" id="tccStateGrid"></div>
+        </div>
+
+        <!-- DEPARTMENT OVERVIEW GRID -->
+        <div id="tccDeptView" class="tcc-view-panel" style="display:none;">
+          <div class="tcc-subview-head">
+            <button class="tcc-back-btn" onclick="tccShowModeView()">&#8592; Back to Modes</button>
+            <div class="tcc-head-group">
+              <h3>Ministries & Defense Organizations at a Glance</h3>
+              <div class="tcc-subview-tools">
+                <input type="text" id="tccDeptSearch" placeholder="Search departments..." oninput="tccFilterGrid('tccDeptGrid','tccDeptSearch')" />
+                <button class="tcc-btn tcc-btn-primary" onclick="tccOpenTable('dept', 'ALL')">View All Dept Bids</button>
+              </div>
+            </div>
+          </div>
+          <div class="tcc-branch-grid" id="tccDeptGrid"></div>
+        </div>
+
+        <!-- CATEGORIES OVERVIEW GRID -->
+        <div id="tccCategoryView" class="tcc-view-panel" style="display:none;">
+          <div class="tcc-subview-head">
+            <button class="tcc-back-btn" onclick="tccShowModeView()">&#8592; Back to Modes</button>
+            <div class="tcc-head-group">
+              <h3>Item Categories at a Glance</h3>
+              <div class="tcc-subview-tools">
+                <input type="text" id="tccCategorySearch" placeholder="Search categories..." oninput="tccFilterGrid('tccCatGrid','tccCategorySearch')" />
+                <button class="tcc-btn tcc-btn-primary" onclick="tccOpenTable('category', 'ALL')">View All Category Bids</button>
+              </div>
+            </div>
+          </div>
+          <div class="tcc-branch-grid" id="tccCatGrid"></div>
+        </div>
+
+        <!-- OTHERS OVERVIEW GRID -->
+        <div id="tccOthersView" class="tcc-view-panel" style="display:none;">
+          <div class="tcc-subview-head">
+            <button class="tcc-back-btn" onclick="tccShowModeView()">&#8592; Back to Modes</button>
+            <div class="tcc-head-group">
+              <h3>PSUs & Other Enterprises at a Glance</h3>
+              <div class="tcc-subview-tools">
+                <button class="tcc-btn tcc-btn-primary" onclick="tccOpenTable('others', 'ALL')">View All Other Bids</button>
+              </div>
+            </div>
+          </div>
+          <div class="tcc-branch-grid" id="tccOthersGrid"></div>
+        </div>
+
+        <!-- RESULTS OVERVIEW GRID -->
+        <div id="tccResultsView" class="tcc-view-panel" style="display:none;">
+          <div class="tcc-subview-head">
+            <button class="tcc-back-btn" onclick="tccShowModeView()">&#8592; Back to Modes</button>
+            <div class="tcc-head-group">
+              <h3>Awarded Bid Results & Competitive Rate Analysis (L1/L2/L3)</h3>
+              <div class="tcc-subview-tools">
+                <button class="tcc-btn tcc-btn-primary" onclick="tccOpenTable('results', 'ALL')">View All Awarded Results</button>
+              </div>
+            </div>
+          </div>
+          <div class="tcc-branch-grid" id="tccResultsGrid"></div>
+        </div>
+
+        <!-- DETAIL TABLE VIEW (WITH FILTERS & REPORT EXPORT) -->
+        <div id="tccDetailView" class="tcc-view-panel" style="display:none;">
+          <div class="tcc-subview-head">
+            <button class="tcc-back-btn" onclick="tccBackFromDetailView()">&#8592; Back to Cards</button>
+            <div class="tcc-head-group">
+              <h3 id="tccDetailTitle">Live Tenders Listing</h3>
+              <div class="tcc-subview-tools">
+                <button class="tcc-btn tcc-btn-outline" onclick="tccOpenPdfModal()">🖨️ Export Filtered as PDF</button>
+                <button class="tcc-btn tcc-btn-secondary" onclick="tccResetFilters()">Clear All Filters</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Filter Panel -->
+          <div class="tcc-filters-box">
+            <div class="tcc-filters-grid">
+              <div class="tcc-field">
+                <label>Search Item / Bid No.</label>
+                <input type="text" id="tccFilterSearch" placeholder="e.g. CCTV, Solar, GEM/2026..." oninput="tccApplyFilters()" />
+              </div>
+              <div class="tcc-field">
+                <label>Status</label>
+                <select id="tccFilterStatus" onchange="tccApplyFilters()">
+                  <option value="all">All Statuses</option>
+                  <option value="Live">Live Only</option>
+                  <option value="Expire">Expired / Awarded</option>
+                </select>
+              </div>
+              <div class="tcc-field">
+                <label>Days Left Deadline</label>
+                <select id="tccFilterDays" onchange="tccApplyFilters()">
+                  <option value="all">Any Deadline</option>
+                  <option value="3">Closing in ≤ 3 Days</option>
+                  <option value="7">Closing in ≤ 7 Days</option>
+                  <option value="15">Closing in ≤ 15 Days</option>
+                </select>
+              </div>
+              <div class="tcc-field">
+                <label>Min Tender Value (₹)</label>
+                <select id="tccFilterValue" onchange="tccApplyFilters()">
+                  <option value="0">All Amounts</option>
+                  <option value="1000000">Above ₹10 Lakhs</option>
+                  <option value="5000000">Above ₹50 Lakhs</option>
+                  <option value="10000000">Above ₹1 Crore</option>
+                </select>
+              </div>
+              <div class="tcc-field">
+                <label>MSE Reservation</label>
+                <select id="tccFilterMse" onchange="tccApplyFilters()">
+                  <option value="all">All Bids</option>
+                  <option value="YES">MSE Reserved (YES)</option>
+                  <option value="NO">Non-MSE (NO)</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Quick Chips -->
+            <div class="tcc-chip-row">
+              <button class="tcc-chip" data-chip="urgent" onclick="tccToggleChip('urgent')">🔴 Closing in ≤ 3 Days</button>
+              <button class="tcc-chip" data-chip="week" onclick="tccToggleChip('week')">📅 Closing This Week</button>
+              <button class="tcc-chip" data-chip="live" onclick="tccToggleChip('live')">✅ Live Only</button>
+              <button class="tcc-chip" data-chip="highval" onclick="tccToggleChip('highval')">💰 Above ₹10 Lakhs</button>
+            </div>
+          </div>
+
+          <!-- Table Results Container -->
+          <div class="tcc-table-card">
+            <div class="tcc-table-head">
+              <h4>Bid Listing <small>(Click any row for complete bid & consignee details)</small></h4>
+              <span class="tcc-results-count" id="tccResultsCount">0 results</span>
+            </div>
+            <div class="tcc-table-wrap">
+              <table class="tcc-table" id="tccMainTable">
+                <thead>
+                  <tr>
+                    <th>S.No.</th>
+                    <th onclick="tccSortTable('bidNo')">Bid Number</th>
+                    <th onclick="tccSortTable('item')">Item Categories</th>
+                    <th onclick="tccSortTable('qty')">Qty</th>
+                    <th onclick="tccSortTable('department')">Department</th>
+                    <th onclick="tccSortTable('branch')">Branch / State</th>
+                    <th onclick="tccSortTable('start')">Start Date</th>
+                    <th onclick="tccSortTable('end')">End Date</th>
+                    <th onclick="tccSortTable('daysLeft')">Days Left</th>
+                    <th onclick="tccSortTable('status')">Status</th>
+                    <th onclick="tccSortTable('emd')">EMD (₹)</th>
+                    <th onclick="tccSortTable('value')">Tender Value (₹)</th>
+                    <th>MSE</th>
+                    <th>Location / Consignee</th>
+                  </tr>
+                </thead>
+                <tbody id="tccTableBody"></tbody>
+              </table>
+              <div class="tcc-empty-state" id="tccEmptyState" style="display:none;">
+                <p>No tenders match the selected filters. Try widening your criteria or clearing filters.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="tcc-footer">
+        <span>GovTender IQ &middot; Tender Command Center &middot; Enterprise Automation Architecture</span>
+        <span>Confidentiality Protected &middot; Sanitized Showcase Data</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- TCC BID DETAIL MODAL -->
+  <div id="tccDetailModalOverlay" class="tcc-submodal-overlay" onclick="if(event.target===this) tccCloseDetailModal()">
+    <div class="tcc-submodal-card">
+      <div class="tcc-detail-head">
+        <button class="tcc-submodal-close" onclick="tccCloseDetailModal()">&times;</button>
+        <div class="tcc-m-bid" id="tccModalBidNo">GEM/2026/B/8102104</div>
+        <div class="tcc-m-item" id="tccModalItemTitle">Next-Generation High Definition IP CCTV Surveillance System</div>
+      </div>
+      <div class="tcc-detail-body">
+        <div class="tcc-mstats-grid">
+          <div class="tcc-stat-box c-green">
+            <small>Tender Value</small>
+            <strong id="tccModalValue">₹48,00,000</strong>
+          </div>
+          <div class="tcc-stat-box c-amber">
+            <small>EMD Amount</small>
+            <strong id="tccModalEmd">₹96,000</strong>
+          </div>
+          <div class="tcc-stat-box c-blue">
+            <small>Quantity</small>
+            <strong id="tccModalQty">120 Nos</strong>
+          </div>
+          <div class="tcc-stat-box c-purple">
+            <small>Days Left</small>
+            <strong id="tccModalDays">4 Days</strong>
+          </div>
+        </div>
+
+        <div class="tcc-detail-rows">
+          <div class="tcc-d-row">
+            <span class="tcc-d-lbl">Department</span>
+            <span class="tcc-d-val" id="tccModalDept">Border Security Force (BSF)</span>
+          </div>
+          <div class="tcc-d-row">
+            <span class="tcc-d-lbl">Branch / Office</span>
+            <span class="tcc-d-val" id="tccModalBranch">HQ Special DG BSF Frontier</span>
+          </div>
+          <div class="tcc-d-row">
+            <span class="tcc-d-lbl">Start / End Date</span>
+            <span class="tcc-d-val" id="tccModalDates">02-Oct-2026 to 14-Oct-2026</span>
+          </div>
+          <div class="tcc-d-row">
+            <span class="tcc-d-lbl">MSE Reserved</span>
+            <span class="tcc-d-val" id="tccModalMse">NO</span>
+          </div>
+          <div class="tcc-d-row">
+            <span class="tcc-d-lbl">Consignee Location</span>
+            <span class="tcc-d-val" id="tccModalLocation">180001, Jammu & Kashmir Frontier BSF Camp</span>
+          </div>
+          <div class="tcc-d-row" id="tccResultsRow" style="display:none;">
+            <span class="tcc-d-lbl">Awarded L1 Rate</span>
+            <span class="tcc-d-val" id="tccModalResultsVal">—</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TCC PDF EXPORT MODAL -->
+  <div id="tccPdfModalOverlay" class="tcc-submodal-overlay" onclick="if(event.target===this) tccClosePdfModal()">
+    <div class="tcc-submodal-card" style="max-width:440px;">
+      <div class="tcc-detail-head" style="padding:20px 24px;">
+        <button class="tcc-submodal-close" onclick="tccClosePdfModal()">&times;</button>
+        <div class="tcc-m-bid">PRINT / PDF EXPORT</div>
+        <div class="tcc-m-item" style="font-size:1.1rem;">Generate High-Contrast Tender Report</div>
+      </div>
+      <div class="tcc-detail-body" style="padding:20px 24px;">
+        <p style="font-size:0.88rem; color:#64708A; margin-bottom:14px;">Select report sort order and layout options:</p>
+        
+        <div style="display:flex; flex-direction:column; gap:10px; margin-bottom:18px;">
+          <button class="tcc-btn tcc-btn-primary" style="text-align:left; padding:12px 16px;" onclick="tccGeneratePdf('date')">
+            📅 Date Wise Export
+            <small style="display:block; font-weight:400; opacity:0.85;">Newest tenders first, oldest last</small>
+          </button>
+          <button class="tcc-btn tcc-btn-primary" style="text-align:left; padding:12px 16px; background:#D97B00;" onclick="tccGeneratePdf('value')">
+            💰 Value Wise Export
+            <small style="display:block; font-weight:400; opacity:0.85;">Highest tender value first, lowest last</small>
+          </button>
+          <button class="tcc-btn tcc-btn-primary" style="text-align:left; padding:12px 16px; background:#1B2A4A;" onclick="tccGeneratePdf('dept')">
+            🏢 Department Wise Export
+            <small style="display:block; font-weight:400; opacity:0.85;">Grouped alphabetically by ministry</small>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE TENDER OPERATIONS PRO MODAL (ENTERPRISE WORKFLOW & TEAM ERP) -->
+  <div id="tender-ops-modal" class="ops-modal-backdrop">
+    <div class="ops-modal-window">
+      <!-- Operations Topbar -->
+      <div class="ops-topbar">
+        <div class="ops-brand-box">
+          <div class="ops-logo-badge">⚡</div>
+          <div>
+            <div class="ops-brand-title">
+              GeM Tender Portal <span class="ops-badge-gem">PRO</span>
+            </div>
+            <span class="ops-brand-sub">Executive Bid Tracking &amp; Report Management System</span>
+          </div>
+        </div>
+
+        <div class="ops-topbar-right">
+          <div class="ops-user-chip">
+            <strong>Jatin Gautam</strong>
+            <small>Tender Manager (Demo Mode)</small>
+          </div>
+          <button class="ops-btn ops-btn-subtle" onclick="opsShowHomeView()">🏠 Home</button>
+          <button class="ops-btn ops-btn-subtle" onclick="opsOpenAdminModal()">🛡️ Admin Tools</button>
+          <button class="ops-btn ops-btn-subtle" onclick="opsOpenPasswordModal()">🔑 Password</button>
+          <button class="ops-btn ops-btn-primary" onclick="opsOpenNewBidModal()">
+            <span>+</span> Fill New Bid Report
+          </button>
+          <button id="ops-close-modal-btn" class="ops-exit-btn" title="Exit Operations Demo">
+            <span>&times; Exit Demo</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Confidentiality Banner -->
+      <div class="ops-nda-strip">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+        <span>Confidentiality Mode • Corporate Data &amp; Employee Identity Sanitized for Public Demonstration</span>
+      </div>
+
+      <!-- Operations Body -->
+      <div class="ops-body-scroll">
+        <!-- KPI Metrics Grid -->
+        <section class="ops-metrics-grid">
+          <div class="ops-metric-card ops-card-purple">
+            <div class="ops-m-header">
+              <span class="ops-m-title">TOTAL HANDLERS</span>
+              <div class="ops-m-icon">👥</div>
+            </div>
+            <div class="ops-m-val" id="opsKpiHandlers">4</div>
+            <div class="ops-m-sub">Active bidding specialists</div>
+          </div>
+          <div class="ops-metric-card ops-card-blue">
+            <div class="ops-m-header">
+              <span class="ops-m-title">ACTIVE BIDS</span>
+              <div class="ops-m-icon">📋</div>
+            </div>
+            <div class="ops-m-val" id="opsKpiActive">19</div>
+            <div class="ops-m-sub">Currently in execution pipeline</div>
+          </div>
+          <div class="ops-metric-card ops-card-green">
+            <div class="ops-m-header">
+              <span class="ops-m-title">AVG PROGRESS</span>
+              <div class="ops-m-icon">📈</div>
+            </div>
+            <div class="ops-m-val" id="opsKpiAvg">68%</div>
+            <div class="ops-m-sub">Completion across all tasks</div>
+          </div>
+          <div class="ops-metric-card ops-card-red">
+            <div class="ops-m-header">
+              <span class="ops-m-title">OVERDUE</span>
+              <div class="ops-m-icon">⚠️</div>
+            </div>
+            <div class="ops-m-val" id="opsKpiOverdue" style="color:#ef4444;">2</div>
+            <div class="ops-m-sub" style="color:#ef4444; font-weight:700;">Immediate action required</div>
+          </div>
+          <div class="ops-metric-card ops-card-amber">
+            <div class="ops-m-header">
+              <span class="ops-m-title">URGENT (&le;3D)</span>
+              <div class="ops-m-icon">⏰</div>
+            </div>
+            <div class="ops-m-val" id="opsKpiUrgent" style="color:#d97706;">3</div>
+            <div class="ops-m-sub">Closing within 72 hours</div>
+          </div>
+          <div class="ops-metric-card ops-card-teal">
+            <div class="ops-m-header">
+              <span class="ops-m-title">DONE TODAY</span>
+              <div class="ops-m-icon">✅</div>
+            </div>
+            <div class="ops-m-val" id="opsKpiDone">8 Tasks</div>
+            <div class="ops-m-sub">Logged in daily activity feed</div>
+          </div>
+        </section>
+
+        <!-- Overdue Bids Alert Banner -->
+        <div class="ops-overdue-banner" id="opsOverdueBanner">
+          <div class="ops-overdue-head" onclick="opsToggleOverdueList()">
+            <span style="font-size:1.3rem;">🚨</span>
+            <span class="ops-overdue-title">2 Overdue Bids — Action Required</span>
+            <button class="ops-overdue-toggle" id="opsOverdueToggleBtn">Hide</button>
+          </div>
+          <div class="ops-overdue-list" id="opsOverdueList">
+            <div class="ops-overdue-item">
+              <span class="ops-overdue-tag">2d overdue</span>
+              <span class="ops-overdue-bid">GEM/2026/B/8016838</span>
+              <span class="ops-overdue-name">Truck Mounted Suction Machine (V2) (Q2)</span>
+              <span class="ops-overdue-handler">👤 BISWA</span>
+              <button class="ops-btn-action" onclick="opsOpenDailyTaskModal('GEM/2026/B/8016838')">Update Task</button>
+            </div>
+            <div class="ops-overdue-item">
+              <span class="ops-overdue-tag">2d overdue</span>
+              <span class="ops-overdue-bid">GEM/2026/B/8017278</span>
+              <span class="ops-overdue-name">Truck Mounted Suction Machine (V2) (Q2) – 1500 L</span>
+              <span class="ops-overdue-handler">👤 JATIN</span>
+              <button class="ops-btn-action" onclick="opsOpenDailyTaskModal('GEM/2026/B/8017278')">Update Task</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team Workload & Progress Section -->
+        <section class="ops-workload-card">
+          <div class="ops-chart-header">
+            <div class="ops-chart-title">
+              <span>📊</span> TEAM WORKLOAD &amp; PROGRESS
+            </div>
+            <span class="ops-chart-hint">CLICK BAR TO VIEW HANDLER ASSIGNMENTS</span>
+          </div>
+
+          <div class="ops-bars-grid">
+            <div class="ops-handler-bar-card bar-biswa" onclick="opsFilterByHandler('BISWA')">
+              <div class="ops-bar-top">
+                <span class="ops-h-name">BISWA</span>
+                <span class="ops-h-badge">6 Bids</span>
+              </div>
+              <div class="ops-bar-track">
+                <div class="ops-bar-fill" style="width:75%;"></div>
+              </div>
+              <div class="ops-bar-sub">75% avg progress &middot; 1 urgent &middot; 1 overdue</div>
+            </div>
+
+            <div class="ops-handler-bar-card bar-aditya" onclick="opsFilterByHandler('ADITYA')">
+              <div class="ops-bar-top">
+                <span class="ops-h-name">ADITYA</span>
+                <span class="ops-h-badge">5 Bids</span>
+              </div>
+              <div class="ops-bar-track">
+                <div class="ops-bar-fill" style="width:60%;"></div>
+              </div>
+              <div class="ops-bar-sub">60% avg progress &middot; 2 in progress &middot; 0 overdue</div>
+            </div>
+
+            <div class="ops-handler-bar-card bar-dilpreet" onclick="opsFilterByHandler('Dilpreet')">
+              <div class="ops-bar-top">
+                <span class="ops-h-name">Dilpreet</span>
+                <span class="ops-h-badge">5 Bids</span>
+              </div>
+              <div class="ops-bar-track">
+                <div class="ops-bar-fill" style="width:80%;"></div>
+              </div>
+              <div class="ops-bar-sub">80% avg progress &middot; 4 submitted &middot; 1 working</div>
+            </div>
+
+            <div class="ops-handler-bar-card bar-jatin" onclick="opsFilterByHandler('Jatin')">
+              <div class="ops-bar-top">
+                <span class="ops-h-name">Jatin</span>
+                <span class="ops-h-badge">3 Bids</span>
+              </div>
+              <div class="ops-bar-track">
+                <div class="ops-bar-fill" style="width:50%;"></div>
+              </div>
+              <div class="ops-bar-sub">50% avg progress &middot; 1 overdue &middot; 1 working</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Today's Team Activity Feed -->
+        <section class="ops-activity-card">
+          <div class="ops-act-header">
+            <div class="ops-act-title">
+              <span>⚡</span> TODAY'S TEAM ACTIVITY
+            </div>
+            <span class="ops-act-pill" id="opsActivityCountPill">8 tasks logged today</span>
+          </div>
+
+          <div class="ops-act-list" id="opsActivityList">
+            <!-- Populated via script.js -->
+          </div>
+        </section>
+
+        <!-- Controls: Search, Filters & View Toggle -->
+        <section class="ops-controls-bar">
+          <div class="ops-search-box">
+            <span class="ops-s-icon">🔍</span>
+            <input type="text" id="opsSearchInput" class="ops-search-input" placeholder="Search by Bid No, Item, Branch, or Handler..." oninput="opsApplyFilters()" />
+          </div>
+
+          <div class="ops-filters-group">
+            <select id="opsMonthFilter" class="ops-select" onchange="opsApplyFilters()">
+              <option value="ALL">All Months</option>
+              <option value="JUN 2026">JUN 2026</option>
+              <option value="JUL 2026">JUL 2026</option>
+              <option value="SEP 2026">SEP 2026</option>
+            </select>
+
+            <select id="opsStatusFilter" class="ops-select" onchange="opsApplyFilters()">
+              <option value="ALL">All Statuses</option>
+              <option value="SUBMITTED">Submitted</option>
+              <option value="IN_PROGRESS">In Progress</option>
+              <option value="WORKING">Working</option>
+              <option value="MISSED">Missed</option>
+              <option value="CANCEL">Cancel</option>
+            </select>
+
+            <div class="ops-view-toggle">
+              <button class="ops-view-btn active" id="opsViewCardsBtn" onclick="opsSwitchView('cards')">🗂️ Cards</button>
+              <button class="ops-view-btn" id="opsViewTableBtn" onclick="opsSwitchView('table')">📊 Table</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Filter Scope Reset Bar (shown when filtering by handler) -->
+        <div id="opsActiveHandlerScope" class="ops-handler-banner" style="display:none;">
+          <span>Filtering by Handler: <strong id="opsScopeHandlerName">BISWA</strong></span>
+          <button class="ops-btn-xs" onclick="opsClearHandlerScope()">Show All Handlers</button>
+        </div>
+
+        <!-- Dynamic Content Display: Cards vs Table -->
+        <main id="opsContentArea">
+          <div class="ops-cards-grid" id="opsCardsGrid"></div>
+          <div class="ops-table-container" id="opsTableContainer" style="display:none;">
+            <table class="ops-gem-table">
+              <thead>
+                <tr>
+                  <th>S.No</th>
+                  <th>Bid No.</th>
+                  <th>Item Categories</th>
+                  <th>Branch / Buyer</th>
+                  <th>Qty</th>
+                  <th>End Date</th>
+                  <th>Tender Value (₹)</th>
+                  <th>EMD (₹)</th>
+                  <th>Handler</th>
+                  <th>Status</th>
+                  <th>Progress</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="opsTableBody"></tbody>
+            </table>
+          </div>
+        </main>
+      </div>
+
+      <!-- Operations Footer -->
+      <div class="ops-footer">
+        <span>GovTender Operations PRO &middot; Google Apps Script Enterprise Architecture &middot; Multi-Sheet Synchronized</span>
+        <span>Role-Based Access Control (GM, Manager, Executive) &middot; Zero Data Loss</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SUBMODAL: OPS DAILY TASK ENTRY -->
+  <div class="ops-submodal-overlay" id="opsDailyModalOverlay" onclick="if(event.target===this) opsCloseDailyModal()">
+    <div class="ops-submodal-card">
+      <div class="ops-submodal-head">
+        <div class="ops-submodal-title"><span>📑</span> Daily Task Entry</div>
+        <button class="ops-submodal-close" onclick="opsCloseDailyModal()">&times;</button>
+      </div>
+      <form onsubmit="opsSubmitDailyTask(event)" class="ops-submodal-body">
+        <div class="ops-form-group">
+          <label class="ops-label">Selected Bid</label>
+          <input type="text" id="opsDailyBidInput" class="ops-input" readonly />
+        </div>
+        <div class="ops-form-group">
+          <label class="ops-label">Tender Title / Equipment</label>
+          <input type="text" id="opsDailyItemInput" class="ops-input" readonly />
+        </div>
+        <div class="ops-form-group">
+          <label class="ops-label">Overall Completion: <strong id="opsDailyPctVal" style="color:var(--tcc-teal); font-size:1.1rem;">60%</strong></label>
+          <input type="range" id="opsDailyPctRange" min="0" max="100" step="5" value="60" oninput="document.getElementById('opsDailyPctVal').textContent=this.value+'%'" style="width:100%; accent-color:var(--tcc-teal);" />
+        </div>
+        <div class="ops-form-group">
+          <label class="ops-label">What did you execute on this bid today? <span style="color:#ef4444;">*</span></label>
+          <textarea id="opsDailyTaskRemarks" class="ops-textarea" placeholder="e.g. Checklist prepared, OEM compliance verified, test certificates cross-checked." required></textarea>
+        </div>
+        <div class="ops-submodal-foot">
+          <button type="button" class="ops-btn ops-btn-subtle" onclick="opsCloseDailyModal()">Cancel</button>
+          <button type="submit" class="ops-btn ops-btn-primary">Save to Work Done</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- SUBMODAL: OPS NEW BID REPORT -->
+  <div class="ops-submodal-overlay" id="opsNewBidModalOverlay" onclick="if(event.target===this) opsCloseNewBidModal()">
+    <div class="ops-submodal-card" style="max-width:680px;">
+      <div class="ops-submodal-head">
+        <div class="ops-submodal-title"><span>+</span> Fill New Bid Report</div>
+        <button class="ops-submodal-close" onclick="opsCloseNewBidModal()">&times;</button>
+      </div>
+      <form onsubmit="opsSubmitNewBid(event)" class="ops-submodal-body">
+        <div style="background:#eef2ff; border:1.5px dashed #6366f1; border-radius:10px; padding:12px 14px; margin-bottom:14px;">
+          <strong style="color:#4f46e5; font-size:0.85rem;">📎 Auto-Extract from GeM PDF (Simulation)</strong>
+          <p style="font-size:0.78rem; color:#64748b; margin-top:2px;">Select sample tender PDF or fill manual details below.</p>
+        </div>
+        <div class="ops-form-row">
+          <div class="ops-form-group">
+            <label class="ops-label">Bid Number *</label>
+            <input type="text" id="opsNewBidNo" class="ops-input" placeholder="e.g. GEM/2026/B/8144210" required />
+          </div>
+          <div class="ops-form-group">
+            <label class="ops-label">Item Category / Equipment *</label>
+            <input type="text" id="opsNewItem" class="ops-input" placeholder="e.g. Modular Prefab Shelters" required />
+          </div>
+        </div>
+        <div class="ops-form-row">
+          <div class="ops-form-group">
+            <label class="ops-label">Branch / Buyer Department *</label>
+            <input type="text" id="opsNewBranch" class="ops-input" placeholder="e.g. Indo-Tibetan Border Police (ITBP)" required />
+          </div>
+          <div class="ops-form-group">
+            <label class="ops-label">Quantity</label>
+            <input type="text" id="opsNewQty" class="ops-input" placeholder="e.g. 50 Units" />
+          </div>
+        </div>
+        <div class="ops-form-row">
+          <div class="ops-form-group">
+            <label class="ops-label">Tender Value (₹)</label>
+            <input type="text" id="opsNewVal" class="ops-input" placeholder="e.g. ₹65,00,000" />
+          </div>
+          <div class="ops-form-group">
+            <label class="ops-label">EMD Amount (₹)</label>
+            <input type="text" id="opsNewEmd" class="ops-input" placeholder="e.g. ₹1,30,000" />
+          </div>
+        </div>
+        <div class="ops-form-row">
+          <div class="ops-form-group">
+            <label class="ops-label">Assigned Handler *</label>
+            <select id="opsNewHandler" class="ops-select" required>
+              <option value="BISWA">Biswajit Singha (Executive)</option>
+              <option value="ADITYA">Aditya (Executive)</option>
+              <option value="Dilpreet">Dilpreet (Executive)</option>
+              <option value="Jatin">Jatin Gautam (Manager)</option>
+            </select>
+          </div>
+          <div class="ops-form-group">
+            <label class="ops-label">Month Group *</label>
+            <select id="opsNewMonth" class="ops-select" required>
+              <option value="JUN 2026">JUN 2026</option>
+              <option value="JUL 2026">JUL 2026</option>
+              <option value="SEP 2026" selected>SEP 2026</option>
+            </select>
+          </div>
+        </div>
+        <div class="ops-submodal-foot">
+          <button type="button" class="ops-btn ops-btn-subtle" onclick="opsCloseNewBidModal()">Cancel</button>
+          <button type="submit" class="ops-btn ops-btn-primary">Save &amp; Sync to Sheet</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast" class="toast"></div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
