@@ -1493,6 +1493,7 @@ body {
    PROFILE CUSTOMIZER DRAWER
    ========================================================================== */
 .quick-edit-trigger {
+  display: none !important;
   position: fixed;
   bottom: 25px;
   right: 25px;
@@ -1518,6 +1519,7 @@ body {
 }
 
 .customizer-drawer {
+  display: none !important;
   position: fixed;
   top: 0;
   right: -420px;

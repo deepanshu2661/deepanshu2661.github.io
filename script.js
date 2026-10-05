@@ -395,100 +395,7 @@ function initProjectModals() {
    7. PROFILE CUSTOMIZER DRAWER (DEEPANSHU DEFAULTS)
    ========================================================================== */
 function initCustomizerDrawer() {
-  const triggerBtn = document.getElementById('edit-profile-btn');
-  const drawer = document.getElementById('customizer-drawer');
-  const closeBtn = document.getElementById('close-drawer-btn');
-  const saveBtn = document.getElementById('save-profile-btn');
-  const resetBtn = document.getElementById('reset-profile-btn');
-
-  // Input fields
-  const nameInput = document.getElementById('edit-name');
-  const roleInput = document.getElementById('edit-role');
-  const emailInput = document.getElementById('edit-email');
-  const locationInput = document.getElementById('edit-location');
-  const githubInput = document.getElementById('edit-github');
-  const linkedinInput = document.getElementById('edit-linkedin');
-  const bioInput = document.getElementById('edit-bio');
-
-  // Load saved profile data if present
-  const savedData = localStorage.getItem('portfolio-custom-profile');
-  if (savedData) {
-    try {
-      const parsed = JSON.parse(savedData);
-      applyProfileData(parsed);
-      populateInputs(parsed);
-    } catch (e) {
-      console.error(e);
-    }
-  }
-
-  triggerBtn?.addEventListener('click', () => drawer.classList.add('open'));
-  closeBtn?.addEventListener('click', () => drawer.classList.remove('open'));
-
-  saveBtn?.addEventListener('click', () => {
-    const data = {
-      name: nameInput.value.trim() || 'Deepanshu',
-      role: roleInput.value.trim() || 'Data Analyst & Web Scraping Specialist',
-      email: emailInput.value.trim() || 'deepanshu2661@gmail.com',
-      location: locationInput.value.trim() || 'New Delhi, India',
-      github: githubInput.value.trim() || 'https://deepanshu2661.github.io',
-      linkedin: linkedinInput.value.trim() || 'https://linkedin.com',
-      bio: bioInput.value.trim()
-    };
-
-    applyProfileData(data);
-    localStorage.setItem('portfolio-custom-profile', JSON.stringify(data));
-    drawer.classList.remove('open');
-    showToast('Profile updated & saved locally!');
-  });
-
-  resetBtn?.addEventListener('click', () => {
-    localStorage.removeItem('portfolio-custom-profile');
-    location.reload();
-  });
-
-  function applyProfileData(data) {
-    if (data.name) {
-      const profileName = document.getElementById('profile-name');
-      const navBrand = document.getElementById('nav-brand-name');
-      if (profileName) profileName.textContent = data.name;
-      if (navBrand) navBrand.textContent = data.name;
-    }
-    if (data.bio) {
-      const bioEl = document.getElementById('profile-bio');
-      if (bioEl) bioEl.textContent = data.bio;
-    }
-    if (data.email) {
-      const emailVal = document.getElementById('contact-email-val');
-      const emailLink = document.getElementById('direct-email-link');
-      const copyBtn = document.getElementById('copy-email-btn');
-      if (emailVal) emailVal.textContent = data.email;
-      if (emailLink) emailLink.href = `mailto:${data.email}`;
-      if (copyBtn) copyBtn.setAttribute('data-email', data.email);
-    }
-    if (data.location) {
-      const locVal = document.getElementById('contact-location-val');
-      if (locVal) locVal.textContent = data.location;
-    }
-    if (data.github) {
-      const gh = document.getElementById('link-github');
-      if (gh) gh.href = data.github;
-    }
-    if (data.linkedin) {
-      const li = document.getElementById('link-linkedin');
-      if (li) li.href = data.linkedin;
-    }
-  }
-
-  function populateInputs(data) {
-    if (data.name) nameInput.value = data.name;
-    if (data.role) roleInput.value = data.role;
-    if (data.email) emailInput.value = data.email;
-    if (data.location) locationInput.value = data.location;
-    if (data.github) githubInput.value = data.github;
-    if (data.linkedin) linkedinInput.value = data.linkedin;
-    if (data.bio) bioInput.value = data.bio;
-  }
+  // Disabled per user request (Fixed portfolio profile)
 }
 
 /* ==========================================================================
@@ -508,15 +415,12 @@ function initContactActions() {
   const printBtn = document.getElementById('cv-print-btn');
   const heroDownloadBtn = document.getElementById('hero-download-cv');
 
-  function triggerPrint() {
-    showToast('Opening clean print dialog (Save as PDF)...');
-    setTimeout(() => {
-      window.print();
-    }, 400);
+  function triggerResumeDownload() {
+    showToast('📥 Downloading Deepanshu's Resume (PDF)...');
   }
 
-  printBtn?.addEventListener('click', triggerPrint);
-  heroDownloadBtn?.addEventListener('click', triggerPrint);
+  printBtn?.addEventListener('click', triggerResumeDownload);
+  heroDownloadBtn?.addEventListener('click', triggerResumeDownload);
 
   const contactForm = document.getElementById('portfolio-contact-form');
   const feedback = document.getElementById('form-feedback');
