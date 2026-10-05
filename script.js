@@ -99,7 +99,7 @@ function initMetricsCounter() {
         obs.unobserve(el);
       }
     });
-  }, { threshold: 0.5 });
+  }, { threshold: 0.15 });
 
   metricNumbers.forEach(num => observer.observe(num));
 
@@ -416,7 +416,7 @@ function initContactActions() {
   const heroDownloadBtn = document.getElementById('hero-download-cv');
 
   function triggerResumeDownload() {
-    showToast('📥 Downloading Deepanshu's Resume (PDF)...');
+    showToast("📥 Downloading Deepanshu's Resume (PDF)...");
   }
 
   printBtn?.addEventListener('click', triggerResumeDownload);
