@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initTenderDemo();
   initTenderOpsDemo();
+  initAddoxDemo();
 });
 
 /* ==========================================================================
@@ -43,10 +44,10 @@ function initTypingEffect() {
   if (!typedTarget) return;
 
   const roles = [
-    'Python Web Scraping (Selenium / BeautifulSoup)',
-    'AI-Driven Workflow Automation Architect',
-    'Google Apps Script & Enterprise Web App Developer',
-    'Senior MIS Specialist & Tender Intelligence Analyst'
+    'AI Automation Specialist',
+    'Python Web Scraping Specialist (Selenium / BS4)',
+    'Enterprise Apps Script & ERP Dashboards',
+    'MIS Automation & Business Intelligence'
   ];
 
   let roleIndex = 0;
@@ -2225,4 +2226,538 @@ function initTenderOpsDemo() {
     showToast('🔑 Role Security: Hashed password verification & SHA-256 session token active.');
   };
 }
+
+/* ==========================================================================
+   13. ADDOX ENTERPRISE SYSTEM DASHBOARD INTERACTIVE SIMULATION ENGINE
+   ========================================================================== */
+function initAddoxDemo() {
+  const modal = document.getElementById('addox-demo-modal');
+  const launchBtn = document.getElementById('launch-addox-demo-btn');
+  const closeBtn = document.getElementById('addox-close-modal-btn');
+  const mainContent = document.getElementById('addox-main-content');
+
+  if (!modal) return;
+
+  launchBtn?.addEventListener('click', () => {
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    window.addoxSwitchTab('home');
+    showToast('Addox Enterprise System Dashboard loaded (Office Suite)');
+  });
+
+  closeBtn?.addEventListener('click', () => {
+    modal.classList.remove('open');
+    document.body.style.overflow = '';
+  });
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('open')) {
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  });
+
+  // Switch tabs
+  window.addoxSwitchTab = function(tabName) {
+    document.querySelectorAll('.addox-nav-item').forEach(el => {
+      el.classList.toggle('active', el.dataset.tab === tabName);
+    });
+
+    if (tabName === 'home') {
+      renderAddoxHome();
+    } else if (tabName === 'dashboard') {
+      renderAddoxDashboardGrid();
+    } else {
+      renderAddoxSection(tabName);
+    }
+  };
+
+  // Render Home (Screenshot 1 matching: "PLEASE CHOOSE THE DESIRED MODULE")
+  function renderAddoxHome() {
+    if (!mainContent) return;
+    mainContent.innerHTML = `
+      <div class="addox-main-head">
+        <div>
+          <h2>PLEASE CHOOSE THE DESIRED MODULE</h2>
+          <p>Integrated Corporate Office Suite connecting 12+ organizational units</p>
+        </div>
+        <button class="addox-live-link-btn" onclick="addoxSwitchTab('dashboard')">
+          <span>Go to BI Dashboards &rarr;</span>
+        </button>
+      </div>
+
+      <div class="addox-modules-grid">
+        <div class="addox-card" onclick="addoxOpenDetail('company-profile')">
+          <div class="addox-card-icon-box addox-icon-red">🏢</div>
+          <h4>Company Profile</h4>
+          <span>About Addox & Corporate Structure</span>
+          <small>Open &rarr;</small>
+        </div>
+
+        <div class="addox-card" onclick="addoxOpenDetail('admin')">
+          <div class="addox-card-icon-box addox-icon-blue">🛡️</div>
+          <h4>Administration</h4>
+          <span>Master Data & Access Control</span>
+          <small>Open &rarr;</small>
+        </div>
+
+        <div class="addox-card" onclick="addoxOpenDetail('fms')">
+          <div class="addox-card-icon-box addox-icon-cyan">🚚</div>
+          <h4>FMS</h4>
+          <span>Fleet & Transport Operations</span>
+          <small>Open &rarr;</small>
+        </div>
+
+        <div class="addox-card" onclick="addoxOpenDetail('ims')">
+          <div class="addox-card-icon-box addox-icon-purple">📦</div>
+          <h4>IMS</h4>
+          <span>Inventory & Warehouse Depot</span>
+          <small>Open &rarr;</small>
+        </div>
+
+        <div class="addox-card" onclick="addoxOpenDetail('hr')">
+          <div class="addox-card-icon-box addox-icon-red">👥</div>
+          <h4>HR</h4>
+          <span>Attendance & Human Resources</span>
+          <small>Open &rarr;</small>
+        </div>
+
+        <div class="addox-card" style="border-color:#8B1E1E; box-shadow:0 6px 18px rgba(139,30,30,0.12);" onclick="addoxSwitchTab('dashboard')">
+          <div class="addox-card-icon-box addox-icon-blue">📊</div>
+          <h4 style="color:#8B1E1E;">Dashboard (BI)</h4>
+          <span>Analytics & 15+ Business Reports</span>
+          <small style="color:#8B1E1E; font-weight:800;">Launch BI &rarr;</small>
+        </div>
+
+        <div class="addox-card" onclick="addoxOpenDetail('checklist')">
+          <div class="addox-card-icon-box addox-icon-green">✅</div>
+          <h4>Checklist</h4>
+          <span>Daily Operations Checklists</span>
+          <small>Open &rarr;</small>
+        </div>
+
+        <div class="addox-card" onclick="addoxOpenDetail('marketing')">
+          <div class="addox-card-icon-box addox-icon-amber">📢</div>
+          <h4>Marketing</h4>
+          <span>Catalogues & Broadcast Media</span>
+          <small>Open &rarr;</small>
+        </div>
+
+        <div class="addox-card" onclick="addoxOpenDetail('sales')">
+          <div class="addox-card-icon-box addox-icon-red">📈</div>
+          <h4>Sales</h4>
+          <span>Showroom & Revenue Analysis</span>
+          <small>Open &rarr;</small>
+        </div>
+
+        <div class="addox-card" onclick="addoxOpenDetail('purchase')">
+          <div class="addox-card-icon-box addox-icon-amber">🛍️</div>
+          <h4>Purchase</h4>
+          <span>Loading & Price List Files</span>
+          <small>Open &rarr;</small>
+        </div>
+
+        <div class="addox-card" onclick="addoxOpenDetail('warehouse')">
+          <div class="addox-card-icon-box addox-icon-amber">🏭</div>
+          <h4>Warehouse</h4>
+          <span>Depot & Ghevra Stock Tracker</span>
+          <small>Open &rarr;</small>
+        </div>
+
+        <div class="addox-card" onclick="addoxOpenDetail('forms')">
+          <div class="addox-card-icon-box addox-icon-blue">📝</div>
+          <h4>Forms & Logs</h4>
+          <span>Google Forms Automated Ingestion</span>
+          <small>Open &rarr;</small>
+        </div>
+      </div>
+    `;
+  }
+
+  // Render Dashboard Grid (Screenshot 2 matching: "Dashboard - Analytics & Business Intelligence")
+  function renderAddoxDashboardGrid() {
+    if (!mainContent) return;
+    mainContent.innerHTML = `
+      <div class="addox-main-head">
+        <div>
+          <h2>Dashboard</h2>
+          <p>Analytics & Business Intelligence Modules &bull; Live Simulated Corporate KPIs</p>
+        </div>
+        <button class="addox-back-btn" onclick="addoxSwitchTab('home')">
+          &larr; Back to Modules
+        </button>
+      </div>
+
+      <div class="addox-modules-grid">
+        <div class="addox-card" onclick="addoxOpenDetail('attendance')">
+          <div class="addox-card-icon-box addox-icon-blue">📋</div>
+          <h4>Attendance</h4>
+          <span>Biometric & Google Sheets Sync</span>
+          <small>Open &rarr;</small>
+        </div>
+
+        <div class="addox-card" onclick="addoxOpenDetail('system-master')">
+          <div class="addox-card-icon-box addox-icon-red">📝</div>
+          <h4>System Master of BCI</h4>
+          <span>Entity Master Records</span>
+          <small>Open &rarr;</small>
+        </div>
+
+        <div class="addox-card" onclick="addoxOpenDetail('checklist-v2')">
+          <div class="addox-card-icon-box addox-icon-green">📊</div>
+          <h4>Checklist Dashboard V2</h4>
+          <span>Daily Workflow Audit Logs</span>
+          <small>Open &rarr;</small>
+        </div>
+
+        <div class="addox-card" onclick="addoxOpenDetail('sale-purchase-stock')">
+          <div class="addox-card-icon-box addox-icon-amber">📁</div>
+          <h4>Sale-Purchase-Stock</h4>
+          <span>Tri-Way Inflow/Outflow Tracker</span>
+          <small>Open &rarr;</small>
+        </div>
+
+        <div class="addox-card" onclick="addoxOpenDetail('pdf-builder')">
+          <div class="addox-card-icon-box addox-icon-amber">📄</div>
+          <h4>PDF Builder</h4>
+          <span>Automated Challans & Invoices</span>
+          <small>Open &rarr;</small>
+        </div>
+
+        <div class="addox-card" onclick="addoxOpenDetail('pending-orders')">
+          <div class="addox-card-icon-box addox-icon-blue">📈</div>
+          <h4>Pending Order Dashboard</h4>
+          <span>Dispatches & Delivery Timeline</span>
+          <small>Open &rarr;</small>
+        </div>
+
+        <div class="addox-card" onclick="addoxOpenDetail('dealer-transport')">
+          <div class="addox-card-icon-box addox-icon-purple">🚚</div>
+          <h4>Dealer & Transport</h4>
+          <span>Fleet Dispatch & Carrier SLAs</span>
+          <small>Open &rarr;</small>
+        </div>
+
+        <div class="addox-card" onclick="addoxOpenDetail('purchase-fms')">
+          <div class="addox-card-icon-box addox-icon-red">📌</div>
+          <h4>Purchase FMS Dashboard</h4>
+          <span>Step-by-Step Purchase Pipeline</span>
+          <small>Open &rarr;</small>
+        </div>
+
+        <div class="addox-card" onclick="addoxOpenDetail('calling-dashboard')">
+          <div class="addox-card-icon-box addox-icon-blue">📞</div>
+          <h4>Calling Dashboard</h4>
+          <span>Inbound & Outbound MIS Logs</span>
+          <small>Open &rarr;</small>
+        </div>
+
+        <div class="addox-card" onclick="addoxOpenDetail('whatsapp-community')">
+          <div class="addox-card-icon-box addox-icon-green">💬</div>
+          <h4>Whatsapp Community</h4>
+          <span>Automated Customer Broadcasts</span>
+          <small>Open &rarr;</small>
+        </div>
+
+        <div class="addox-card" onclick="addoxOpenDetail('ghevra-stock')">
+          <div class="addox-card-icon-box addox-icon-red">🏢</div>
+          <h4>Ghevra Stock Dashboard</h4>
+          <span>Regional Depot Material Counts</span>
+          <small>Open &rarr;</small>
+        </div>
+
+        <div class="addox-card" onclick="addoxOpenDetail('crm')">
+          <div class="addox-card-icon-box addox-icon-purple">📊</div>
+          <h4>CRM Dashboard</h4>
+          <span>Lead Stages & Customer Lifecycle</span>
+          <small>Open &rarr;</small>
+        </div>
+
+        <div class="addox-card" onclick="addoxOpenDetail('field-salesman')">
+          <div class="addox-card-icon-box addox-icon-amber">🏃</div>
+          <h4>Field Salesman Dashboard</h4>
+          <span>GPS & Daily Visit Conversions</span>
+          <small>Open &rarr;</small>
+        </div>
+
+        <div class="addox-card" onclick="addoxOpenDetail('checklist-dash')">
+          <div class="addox-card-icon-box addox-icon-amber">📑</div>
+          <h4>Checklist Dashboard</h4>
+          <span>Facility & Plant Audits</span>
+          <small>Open &rarr;</small>
+        </div>
+
+        <div class="addox-card" onclick="addoxOpenDetail('pc-dash')">
+          <div class="addox-card-icon-box addox-icon-blue">💻</div>
+          <h4>PC Dashboard</h4>
+          <span>Production Control KPIs</span>
+          <small>Open &rarr;</small>
+        </div>
+      </div>
+    `;
+  }
+
+  // Interactive Detailed Drilldown Simulator
+  window.addoxOpenDetail = function(moduleId) {
+    if (!mainContent) return;
+    if (moduleId === 'attendance' || moduleId === 'hr') {
+      mainContent.innerHTML = `
+        <div class="addox-detail-view">
+          <div class="addox-detail-head">
+            <h3>📋 Attendance & Workforce Biometric Intelligence</h3>
+            <button class="addox-back-btn" onclick="addoxSwitchTab('dashboard')">&larr; Back to Dashboard</button>
+          </div>
+          <div class="addox-kpis-grid">
+            <div class="addox-kpi-card">
+              <div class="addox-kpi-val" style="color:#15803D;">96.4%</div>
+              <div class="addox-kpi-lbl">Today's Attendance</div>
+            </div>
+            <div class="addox-kpi-card">
+              <div class="addox-kpi-val" style="color:#0F172A;">48 / 50</div>
+              <div class="addox-kpi-lbl">Staff Present</div>
+            </div>
+            <div class="addox-kpi-card">
+              <div class="addox-kpi-val" style="color:#B45309;">2</div>
+              <div class="addox-kpi-lbl">Approved Leaves</div>
+            </div>
+            <div class="addox-kpi-card">
+              <div class="addox-kpi-val" style="color:#8B1E1E;">0</div>
+              <div class="addox-kpi-lbl">Unexcused Absences</div>
+            </div>
+          </div>
+          <div class="addox-table-wrap">
+            <table class="addox-table">
+              <thead>
+                <tr>
+                  <th>Employee / ID</th>
+                  <th>Department</th>
+                  <th>Shift Time</th>
+                  <th>Punch In</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Rohan Sharma</strong> (EMP-104)</td>
+                  <td>Plant Operations</td>
+                  <td>09:00 AM - 06:00 PM</td>
+                  <td>08:52 AM</td>
+                  <td><span class="addox-status-badge addox-sb-green">On Time</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Sunil Verma</strong> (EMP-218)</td>
+                  <td>Logistics & Dispatch</td>
+                  <td>09:00 AM - 06:00 PM</td>
+                  <td>08:58 AM</td>
+                  <td><span class="addox-status-badge addox-sb-green">On Time</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Pooja Mehra</strong> (EMP-312)</td>
+                  <td>Accounts & Finance</td>
+                  <td>09:30 AM - 06:30 PM</td>
+                  <td>09:41 AM</td>
+                  <td><span class="addox-status-badge addox-sb-amber">Late (+11m)</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Amit Yadav</strong> (EMP-189)</td>
+                  <td>Showroom Sales</td>
+                  <td>10:00 AM - 07:00 PM</td>
+                  <td>09:55 AM</td>
+                  <td><span class="addox-status-badge addox-sb-green">On Time</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      `;
+    } else if (moduleId === 'sale-purchase-stock' || moduleId === 'ims' || moduleId === 'warehouse' || moduleId === 'ghevra-stock') {
+      mainContent.innerHTML = `
+        <div class="addox-detail-view">
+          <div class="addox-detail-head">
+            <h3>📁 Sale - Purchase - Stock Tri-Way Reconciliation</h3>
+            <button class="addox-back-btn" onclick="addoxSwitchTab('dashboard')">&larr; Back to Dashboard</button>
+          </div>
+          <div class="addox-kpis-grid">
+            <div class="addox-kpi-card">
+              <div class="addox-kpi-val" style="color:#15803D;">₹42.8 Lakh</div>
+              <div class="addox-kpi-lbl">MTD Sales Inflow</div>
+            </div>
+            <div class="addox-kpi-card">
+              <div class="addox-kpi-val" style="color:#4338CA;">₹38.2 Lakh</div>
+              <div class="addox-kpi-lbl">MTD Purchase Outflow</div>
+            </div>
+            <div class="addox-kpi-card">
+              <div class="addox-kpi-val" style="color:#8B1E1E;">₹1.42 Cr</div>
+              <div class="addox-kpi-lbl">Current Stock Valuation</div>
+            </div>
+            <div class="addox-kpi-card">
+              <div class="addox-kpi-val" style="color:#B45309;">3 Items</div>
+              <div class="addox-kpi-lbl">Below Reorder Level</div>
+            </div>
+          </div>
+          <div class="addox-table-wrap">
+            <table class="addox-table">
+              <thead>
+                <tr>
+                  <th>Item Code / Category</th>
+                  <th>In-Stock Qty</th>
+                  <th>Reserved / Sold</th>
+                  <th>Reorder Point</th>
+                  <th>Health Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>ADX-MAT-01</strong> Industrial Adhesive Grade A</td>
+                  <td>450 Drums</td>
+                  <td>120 Drums</td>
+                  <td>100 Drums</td>
+                  <td><span class="addox-status-badge addox-sb-green">Optimal Stock</span></td>
+                </tr>
+                <tr>
+                  <td><strong>ADX-PL-44</strong> Polymer Compound Resin</td>
+                  <td>85 Bags</td>
+                  <td>60 Bags</td>
+                  <td>100 Bags</td>
+                  <td><span class="addox-status-badge addox-sb-amber">Low Stock Reorder</span></td>
+                </tr>
+                <tr>
+                  <td><strong>ADX-PK-08</strong> Heavy Duty Corrugated Packaging</td>
+                  <td>1,800 Boxes</td>
+                  <td>450 Boxes</td>
+                  <td>500 Boxes</td>
+                  <td><span class="addox-status-badge addox-sb-green">Optimal Stock</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      `;
+    } else if (moduleId === 'pending-orders' || moduleId === 'dealer-transport' || moduleId === 'fms') {
+      mainContent.innerHTML = `
+        <div class="addox-detail-view">
+          <div class="addox-detail-head">
+            <h3>📈 Pending Orders & Fleet Transport SLA</h3>
+            <button class="addox-back-btn" onclick="addoxSwitchTab('dashboard')">&larr; Back to Dashboard</button>
+          </div>
+          <div class="addox-kpis-grid">
+            <div class="addox-kpi-card">
+              <div class="addox-kpi-val" style="color:#0F172A;">14</div>
+              <div class="addox-kpi-lbl">Orders in Queue</div>
+            </div>
+            <div class="addox-kpi-card">
+              <div class="addox-kpi-val" style="color:#15803D;">11</div>
+              <div class="addox-kpi-lbl">Dispatched on Time</div>
+            </div>
+            <div class="addox-kpi-card">
+              <div class="addox-kpi-val" style="color:#4338CA;">3</div>
+              <div class="addox-kpi-lbl">In Transit</div>
+            </div>
+            <div class="addox-kpi-card">
+              <div class="addox-kpi-val" style="color:#15803D;">0</div>
+              <div class="addox-kpi-lbl">SLA Breaches</div>
+            </div>
+          </div>
+          <div class="addox-table-wrap">
+            <table class="addox-table">
+              <thead>
+                <tr>
+                  <th>Order Ref</th>
+                  <th>Client / Destination</th>
+                  <th>Value</th>
+                  <th>Estimated Delivery</th>
+                  <th>Tracking Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>#ADX-ORD-902</strong></td>
+                  <td>Global Polymer Traders (Jaipur)</td>
+                  <td>₹4,50,000</td>
+                  <td>Tomorrow 11:00 AM</td>
+                  <td><span class="addox-status-badge addox-sb-blue">In Transit (Vehicle RJ-14)</span></td>
+                </tr>
+                <tr>
+                  <td><strong>#ADX-ORD-903</strong></td>
+                  <td>Apex Industries (Faridabad)</td>
+                  <td>₹8,20,000</td>
+                  <td>Today 05:00 PM</td>
+                  <td><span class="addox-status-badge addox-sb-green">Dispatched</span></td>
+                </tr>
+                <tr>
+                  <td><strong>#ADX-ORD-904</strong></td>
+                  <td>Krishna Manufacturing (Delhi)</td>
+                  <td>₹2,10,000</td>
+                  <td>In Production</td>
+                  <td><span class="addox-status-badge addox-sb-amber">Packing & QC</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      `;
+    } else if (moduleId === 'purchase-fms' || moduleId === 'purchase') {
+      mainContent.innerHTML = `
+        <div class="addox-detail-view">
+          <div class="addox-detail-head">
+            <h3>📌 Purchase FMS: 5-Stage Step-by-Step Pipeline</h3>
+            <button class="addox-back-btn" onclick="addoxSwitchTab('dashboard')">&larr; Back to Dashboard</button>
+          </div>
+          <div style="background:#F8FAFC; border:1px solid #E2E8F0; border-radius:12px; padding:16px; margin-bottom:18px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;">
+              <span style="font-weight:700; color:#8B1E1E;">Stage 1: Indent Raised</span> &rarr;
+              <span style="font-weight:700; color:#8B1E1E;">Stage 2: Vendor PO Sent</span> &rarr;
+              <span style="font-weight:700; color:#B45309;">Stage 3: Production</span> &rarr;
+              <span style="font-weight:700; color:#475569;">Stage 4: QC</span> &rarr;
+              <span style="font-weight:700; color:#475569;">Stage 5: GRN & Payment</span>
+            </div>
+          </div>
+          <div class="addox-kpis-grid">
+            <div class="addox-kpi-card">
+              <div class="addox-kpi-val" style="color:#0F172A;">28</div>
+              <div class="addox-kpi-lbl">Active Purchase Orders</div>
+            </div>
+            <div class="addox-kpi-card">
+              <div class="addox-kpi-val" style="color:#15803D;">24</div>
+              <div class="addox-kpi-lbl">Within Vendor SLA</div>
+            </div>
+            <div class="addox-kpi-card">
+              <div class="addox-kpi-val" style="color:#B45309;">4</div>
+              <div class="addox-kpi-lbl">Awaiting Delivery</div>
+            </div>
+          </div>
+        </div>
+      `;
+    } else {
+      mainContent.innerHTML = `
+        <div class="addox-detail-view">
+          <div class="addox-detail-head">
+            <h3>🏢 ${moduleId.toUpperCase()} Module Operations</h3>
+            <button class="addox-back-btn" onclick="addoxSwitchTab('home')">&larr; Back to Modules</button>
+          </div>
+          <p style="font-size:13.5px; color:#475569; line-height:1.6;">
+            Connected to Addox Google Apps Script &amp; Sheets database. Live automated data sync runs every hour.
+          </p>
+          <div style="margin-top:20px;">
+            <a href="https://sites.google.com/view/addoxdashboard" target="_blank" rel="noopener noreferrer" class="addox-live-link-btn" style="background:#8B1E1E; color:#fff;">
+              <span>Open on Live Google Site Portal &rarr;</span>
+            </a>
+          </div>
+        </div>
+      `;
+    }
+  };
+
+  function renderAddoxSection(sectionName) {
+    window.addoxOpenDetail(sectionName);
+  }
+}
+
 

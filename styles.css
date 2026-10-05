@@ -475,8 +475,8 @@ body {
 
 .portrait-container {
   position: relative;
-  width: 340px;
-  height: 340px;
+  width: 320px;
+  height: 390px;
 }
 
 .portrait-glow-ring {
@@ -499,6 +499,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 10%;
   border-radius: 28px;
   position: relative;
   z-index: 1;
@@ -3701,5 +3702,470 @@ body {
   .ops-body-scroll { padding: 14px 16px; }
   .ops-bars-grid { grid-template-columns: 1fr; }
   .ops-form-row { grid-template-columns: 1fr; }
+}
+
+/* ==========================================================================
+   14. ADDOX ENTERPRISE SYSTEM DASHBOARD INTERACTIVE SIMULATOR
+   ========================================================================== */
+.addox-modal-backdrop {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(7, 10, 19, 0.88);
+  backdrop-filter: blur(8px);
+  z-index: 2000;
+  overflow-y: auto;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 24px 16px;
+}
+
+.addox-modal-backdrop.open {
+  display: flex;
+}
+
+.addox-modal-window {
+  max-width: 1380px;
+  width: 100%;
+  background: #F4F6F9;
+  color: #1F2937;
+  border-radius: 20px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+  animation: tccModalIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+
+/* Addox Header */
+.addox-topbar {
+  background: linear-gradient(135deg, #8B1E1E 0%, #691414 100%);
+  color: #FFFFFF;
+  padding: 14px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 14px rgba(139, 30, 30, 0.25);
+}
+
+.addox-brand-group {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.addox-logo-badge {
+  background: #FFFFFF;
+  color: #8B1E1E;
+  font-family: 'Sora', sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+  padding: 4px 12px;
+  border-radius: 8px;
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.addox-title-wrap h3 {
+  font-family: 'Sora', sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin: 0;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.addox-title-wrap small {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.addox-suite-pill {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #FFFFFF;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 6px;
+  letter-spacing: 0.06em;
+}
+
+.addox-top-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.addox-live-link-btn {
+  background: #FFFFFF;
+  color: #8B1E1E;
+  border: none;
+  font-size: 12.5px;
+  font-weight: 700;
+  padding: 7px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  transition: all 0.15s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.addox-live-link-btn:hover {
+  background: #FFF1F2;
+  transform: translateY(-1px);
+}
+
+.addox-exit-btn {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.addox-exit-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Addox Subheader with social icons from screenshot */
+.addox-substrip {
+  background: #FFFFFF;
+  border-bottom: 1px solid #E5E7EB;
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.addox-channel-chips {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.addox-channel-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.addox-channel-icon:hover { transform: scale(1.1); }
+.addox-ch-ig { background: linear-gradient(135deg, #E1306C, #F77737); color: #fff; }
+.addox-ch-wa { background: #25D366; color: #fff; }
+.addox-ch-ad { background: #8B1E1E; color: #fff; font-weight: 800; font-size: 10px; }
+.addox-ch-pt { background: #4285F4; color: #fff; }
+.addox-ch-cat { background: #F59E0B; color: #fff; }
+
+.addox-layout {
+  display: flex;
+  min-height: 600px;
+}
+
+/* Addox Sidebar */
+.addox-sidebar {
+  width: 230px;
+  background: #FFFFFF;
+  border-right: 1px solid #E5E7EB;
+  padding: 16px 12px;
+  flex-shrink: 0;
+  overflow-y: auto;
+  max-height: 660px;
+}
+
+.addox-side-group-title {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9CA3AF;
+  font-weight: 700;
+  margin: 14px 10px 6px;
+}
+
+.addox-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #4B5563;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin-bottom: 2px;
+}
+
+.addox-nav-item:hover {
+  background: #F3F4F6;
+  color: #111827;
+}
+
+.addox-nav-item.active {
+  background: #FEE2E2;
+  color: #8B1E1E;
+  font-weight: 700;
+}
+
+.addox-nav-icon {
+  font-size: 15px;
+  width: 20px;
+  text-align: center;
+}
+
+/* Addox Main Content */
+.addox-main {
+  flex: 1;
+  background: #F8FAFC;
+  padding: 24px 28px;
+  overflow-y: auto;
+  max-height: 660px;
+}
+
+.addox-main-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.addox-main-head h2 {
+  font-family: 'Sora', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: #8B1E1E;
+  margin: 0;
+}
+
+.addox-main-head p {
+  font-size: 12.5px;
+  color: #64748B;
+  margin: 2px 0 0;
+}
+
+/* Modules Grid */
+.addox-modules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.addox-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 18px 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.16s ease;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.03);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 150px;
+}
+
+.addox-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(139, 30, 30, 0.1);
+  border-color: #F87171;
+}
+
+.addox-card-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.addox-icon-red { background: #FEE2E2; color: #8B1E1E; }
+.addox-icon-blue { background: #E0E7FF; color: #4338CA; }
+.addox-icon-green { background: #DCFCE7; color: #15803D; }
+.addox-icon-amber { background: #FEF3C7; color: #B45309; }
+.addox-icon-purple { background: #F3E8FF; color: #7E22CE; }
+.addox-icon-cyan { background: #CFFAFE; color: #0E7490; }
+
+.addox-card h4 {
+  font-family: 'Sora', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #0F172A;
+  margin: 0 0 3px;
+}
+
+.addox-card span {
+  font-size: 11px;
+  color: #64748B;
+  line-height: 1.35;
+}
+
+.addox-card small {
+  font-size: 11px;
+  color: #8B1E1E;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+/* Interactive Drilldown Simulator in Addox */
+.addox-detail-view {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 22px 24px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+  animation: tccFadeIn 0.2s ease-out;
+}
+
+.addox-detail-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 12px;
+  border-bottom: 1px solid #F1F5F9;
+  padding-bottom: 12px;
+}
+
+.addox-detail-head h3 {
+  font-family: 'Sora', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  color: #0F172A;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.addox-back-btn {
+  background: #F1F5F9;
+  border: 1px solid #CBD5E1;
+  color: #334155;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.addox-back-btn:hover {
+  background: #E2E8F0;
+  color: #0F172A;
+}
+
+.addox-kpis-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.addox-kpi-card {
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.addox-kpi-val {
+  font-family: 'Sora', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: #8B1E1E;
+}
+
+.addox-kpi-lbl {
+  font-size: 10.5px;
+  font-weight: 600;
+  color: #64748B;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 2px;
+}
+
+.addox-table-wrap {
+  overflow-x: auto;
+  border-radius: 10px;
+  border: 1px solid #E2E8F0;
+}
+
+.addox-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12.5px;
+  text-align: left;
+}
+
+.addox-table th {
+  background: #F1F5F9;
+  color: #475569;
+  font-weight: 700;
+  padding: 9px 12px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.addox-table td {
+  padding: 9px 12px;
+  border-top: 1px solid #E2E8F0;
+  color: #1E293B;
+}
+
+.addox-status-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 6px;
+}
+
+.addox-sb-green { background: #DCFCE7; color: #15803D; }
+.addox-sb-amber { background: #FEF3C7; color: #B45309; }
+.addox-sb-blue { background: #DBEAFE; color: #1D4ED8; }
+
+@media (max-width: 768px) {
+  .addox-layout { flex-direction: column; }
+  .addox-sidebar { width: 100%; max-height: 180px; }
+  .addox-modules-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
